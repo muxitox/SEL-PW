@@ -1,0 +1,376 @@
+C:\Users\Usuario\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/Usuario/Documents/Universidad/Master/SEL/PW1/main.py
+Error [0.3548387096774194, 0.25806451612903225, 0.4838709677419355, 0.3870967741935484, 0.4, 0.16666666666666666, 0.4, 0.3103448275862069, 0.39285714285714285, 0.39285714285714285]
+Mean error 0.3546596747709095
+Std error 0.08450629590390774
+
+NaNs [0.0, 0.0, 0.0967741935483871, 0.03225806451612903, 0.13333333333333333, 0.0, 0.1, 0.034482758620689655, 0.0, 0.07142857142857142]
+Mean NaN rate 0.04682769214471105
+Std NaN rate 0.04748302747663227
+
+Time [172.93208193778992, 152.49839305877686, 175.95141983032227, 152.7562334537506, 177.8296799659729, 185.96863055229187, 184.29238438606262, 191.24787545204163, 192.38981175422668, 174.65026259422302]
+Mean time 176.05167729854583
+Std time 13.328227101870903
+
+178  Rules (discovery order)
+-------------------------------------------------------------------------------------
+#  pulse='(132.667, 184.0]'  and  mucous_membrane='dark_cyanotic' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  pain='extreme_pain' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  abdominal_distention='moderate' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  nasogastric_reflux='less_1_liter' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomen='normal' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomo_protein='(6.767, 10.1]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  mucous_membrane='normal_pink' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  packed_cell_volume='(57.667, 75.0]'  and  nasogastric_reflux_ph='nan' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  packed_cell_volume='(57.667, 75.0]'  and  lesion_1='(27406.667, 41110.0]' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  temp_of_extremities='cool' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  pain='depressed' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  nasogastric_tube='none' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  nasogastric_tube='none' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  surgery='no' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  abdomo_appearance='cloudy' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomo_appearance='clear'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  packed_cell_volume='(57.667, 75.0]'  and  temp_of_extremities='cool'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  temp_of_extremities='cool'  and  abdomen='distend_small' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  mucous_membrane='bright_red'  and  nasogastric_reflux_ph='(5.333, 7.5]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pain='extreme_pain'  and  abdomo_protein='(6.767, 10.1]' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='extreme_pain'  and  capillary_refill_time='3' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='extreme_pain'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  mucous_membrane='pale_pink' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  nasogastric_reflux_ph='(0.994, 3.167]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  total_protein='(3.214, 31.867]'  and  abdomo_appearance='serosanguious'  and  packed_cell_volume='(40.333, 57.667]' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  pain='extreme_pain'  and  nasogastric_reflux='less_1_liter'  and  temp_of_extremities='cold' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='bright_red'  and  hospital_number='(3709911.333, 5305629.0]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='bright_red'  and  rectal_exam_feces='normal'  and  surgery='yes' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='bright_red'  and  nasogastric_reflux='more_1_liter'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  age='young'  and  mucous_membrane='pale_cyanotic' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  age='young'  and  pain='alert' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  age='young'  and  abdomo_appearance='serosanguious'  and  surgery='yes' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  age='young'  and  rectal_exam_feces='absent'  and  abdominal_distention='moderate' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pain='severe_pain'  and  temp_of_extremities='normal' => died Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='severe_pain'  and  cp_data='yes'  and  nasogastric_reflux='more_1_liter' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  cp_data='yes'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  cp_data='yes'  and  abdomo_protein='(3.433, 6.767]' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  abdomen='distend_small'  and  abdomo_appearance='clear' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  hospital_number='(3709911.333, 5305629.0]'  and  pain='alert' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  pulse='(81.333, 132.667]'  and  rectal_exam_feces='increased'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(81.333, 132.667]'  and  abdomo_protein='(6.767, 10.1]'  and  abdominal_distention='severe' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  pulse='(81.333, 132.667]'  and  cp_data='yes'  and  peripheral_pulse='normal'  and  rectal_temp='(37.2, 39.0]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pulse='(81.333, 132.667]'  and  cp_data='yes'  and  abdomo_protein='(3.433, 6.767]'  and  nasogastric_reflux='none'  and  respiratory_rate='(7.912, 37.333]'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  total_protein='(3.214, 31.867]'  and  lesion_1='(-41.11, 13703.333]'  and  lesion_2='0'  and  lesion_3='0'  and  age='adult'  and  hospital_number='(513688.847, 2114193.667]'  and  surgical_lesion='yes'  and  peristalsis='hypomotile'  and  packed_cell_volume='(40.333, 57.667]'  and  abdomo_appearance='serosanguious'  and  temp_of_extremities='cool'  and  peripheral_pulse='reduced'  and  surgery='no'  and  rectal_temp='(39.0, 40.8]'  and  mucous_membrane='normal_pink'  and  capillary_refill_time='more_3_sec'  and  pain='depressed'  and  abdominal_distention='moderate'  and  nasogastric_tube='slight'  and  rectal_exam_feces='normal'  and  abdomen='distend_large' => died Prec:  0.5 Coverage:  0.0033444816053511705
+#  peristalsis='absent'  and  mucous_membrane='bright_pink'  and  cp_data='yes' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  peristalsis='absent'  and  mucous_membrane='bright_pink'  and  surgery='no' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  peristalsis='absent'  and  total_protein='(3.214, 31.867]'  and  nasogastric_reflux='less_1_liter'  and  cp_data='no' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  peripheral_pulse='reduced'  and  nasogastric_reflux='less_1_liter'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  peripheral_pulse='reduced'  and  nasogastric_reflux='less_1_liter'  and  abdomen='normal'  and  temp_of_extremities='cool' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  peripheral_pulse='reduced'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  abdomo_protein='(0.09, 3.433]'  and  abdomo_appearance='serosanguious' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='reduced'  and  total_protein='(3.214, 31.867]'  and  temp_of_extremities='cool'  and  cp_data='no'  and  peristalsis='hypomotile'  and  pain='mild_pain' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  temp_of_extremities='cool'  and  total_protein='(3.214, 31.867]'  and  surgery='yes'  and  peristalsis='hypomotile'  and  nasogastric_reflux='more_1_liter'  and  abdomo_protein='(0.09, 3.433]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  lesion_2='1400' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  nasogastric_reflux_ph='nan'  and  peripheral_pulse='increased' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  nasogastric_reflux_ph='nan'  and  abdomen='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  nasogastric_reflux_ph='nan'  and  packed_cell_volume='(40.333, 57.667]'  and  rectal_temp='(37.2, 39.0]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  peripheral_pulse='absent'  and  rectal_temp='(39.0, 40.8]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='absent'  and  nasogastric_tube='none' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='absent'  and  peristalsis='absent'  and  abdominal_distention='severe' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='increased'  and  packed_cell_volume='(22.948, 40.333]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  pulse='(132.667, 184.0]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  mucous_membrane='dark_cyanotic' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  peristalsis='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  surgery='no' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  total_protein='(31.867, 60.433]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  peristalsis='hypermotile' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='pale_cyanotic'  and  rectal_temp='(39.0, 40.8]'  and  pulse='(81.333, 132.667]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  rectal_temp='(39.0, 40.8]'  and  capillary_refill_time='more_3_sec' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  total_protein='(60.433, 89.0]'  and  peristalsis='hypomotile' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='pale_cyanotic'  and  surgery='no'  and  pain='depressed' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='bright_red'  and  peristalsis='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='bright_red'  and  total_protein='(60.433, 89.0]'  and  pulse='(81.333, 132.667]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='bright_red'  and  abdomen='firm'  and  respiratory_rate='(7.912, 37.333]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='bright_red'  and  surgical_lesion='no'  and  rectal_exam_feces='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='bright_red'  and  surgical_lesion='no'  and  pulse='(81.333, 132.667]'  and  peristalsis='hypomotile' => euthanized Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='bright_red'  and  total_protein='(31.867, 60.433]'  and  surgery='yes' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  rectal_exam_feces='increased' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  temp_of_extremities='cold'  and  abdomen='distend_large' => euthanized Prec:  1.0 Coverage:  0.013377926421404682
+#  total_protein='(60.433, 89.0]'  and  capillary_refill_time='more_3_sec'  and  mucous_membrane='pale_pink' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  peristalsis='normal'  and  temp_of_extremities='cool' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  pain='depressed' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  total_protein='(31.867, 60.433]'  and  packed_cell_volume='(57.667, 75.0]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(31.867, 60.433]'  and  pain='extreme_pain'  and  nasogastric_reflux_ph='(5.333, 7.5]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  total_protein='(31.867, 60.433]'  and  surgery='yes'  and  respiratory_rate='(37.333, 66.667]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  abdominal_distention='severe'  and  packed_cell_volume='(22.948, 40.333]'  and  age='adult' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  abdominal_distention='severe'  and  nasogastric_reflux_ph='(0.994, 3.167]'  and  respiratory_rate='(37.333, 66.667]'  and  mucous_membrane='dark_cyanotic' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  rectal_temp='(39.0, 40.8]'  and  packed_cell_volume='(40.333, 57.667]'  and  pulse='(81.333, 132.667]'  and  hospital_number='(513688.847, 2114193.667]'  and  lesion_1='(-41.11, 13703.333]'  and  lesion_2='0'  and  lesion_3='0'  and  age='adult'  and  nasogastric_tube='slight'  and  capillary_refill_time='more_3_sec'  and  abdominal_distention='moderate'  and  nasogastric_reflux='none'  and  surgery='no'  and  respiratory_rate='(7.912, 37.333]'  and  temp_of_extremities='cool'  and  peripheral_pulse='reduced'  and  mucous_membrane='normal_pink'  and  pain='depressed'  and  peristalsis='hypomotile'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  rectal_exam_feces='normal'  and  abdomen='distend_large'  and  total_protein='(3.214, 31.867]'  and  abdomo_appearance='serosanguious'  and  abdomo_protein='(3.433, 6.767]'  and  surgical_lesion='yes'  and  cp_data='yes' => euthanized Prec:  0.5 Coverage:  0.0033444816053511705
+#  pain='severe_pain'  and  capillary_refill_time='more_3_sec'  and  rectal_exam_feces='normal' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='severe_pain'  and  capillary_refill_time='more_3_sec'  and  mucous_membrane='normal_pink' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  abdomen='distend_large'  and  rectal_exam_feces='normal'  and  abdominal_distention='none'  and  temp_of_extremities='cool' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='3111' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  lesion_1='(13703.333, 27406.667]' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='7111' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='6112' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='3112' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='alert'  and  abdomen='other' => lived Prec:  1.0 Coverage:  0.046822742474916385
+#  pain='alert'  and  abdomo_protein='(3.433, 6.767]' => lived Prec:  1.0 Coverage:  0.046822742474916385
+#  pain='alert'  and  rectal_exam_feces='decreased' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='alert'  and  mucous_membrane='pale_pink' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='alert'  and  peristalsis='normal' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  pain='alert'  and  total_protein='(31.867, 60.433]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='alert'  and  abdomen='firm' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='alert'  and  mucous_membrane='normal_pink'  and  hospital_number='(513688.847, 2114193.667]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  abdomen='other'  and  packed_cell_volume='(22.948, 40.333]' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  abdomen='other'  and  peristalsis='hypermotile' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  abdomen='other'  and  nasogastric_reflux_ph='(0.994, 3.167]' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  abdomen='other'  and  rectal_exam_feces='increased' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  abdomen='other'  and  nasogastric_reflux='none'  and  peripheral_pulse='normal' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  mucous_membrane='normal_pink'  and  lesion_1='(27406.667, 41110.0]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='normal_pink'  and  temp_of_extremities='cold' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='normal_pink'  and  abdominal_distention='severe' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  surgery='no' => lived Prec:  1.0 Coverage:  0.13377926421404682
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  total_protein='(3.214, 31.867]' => lived Prec:  1.0 Coverage:  0.10702341137123746
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.0802675585284281
+#  mucous_membrane='normal_pink'  and  abdomo_appearance='clear'  and  temp_of_extremities='normal' => lived Prec:  1.0 Coverage:  0.06354515050167224
+#  mucous_membrane='normal_pink'  and  abdomo_appearance='clear'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  mucous_membrane='normal_pink'  and  temp_of_extremities='normal'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.10702341137123746
+#  mucous_membrane='normal_pink'  and  abdomen='normal'  and  nasogastric_tube='slight' => lived Prec:  1.0 Coverage:  0.056856187290969896
+#  mucous_membrane='normal_pink'  and  abdomen='normal'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  mucous_membrane='normal_pink'  and  abdomo_protein='(3.433, 6.767]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.09364548494983277
+#  mucous_membrane='normal_pink'  and  abdominal_distention='none'  and  rectal_exam_feces='increased' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='normal_pink'  and  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  temp_of_extremities='warm'  and  rectal_temp='(39.0, 40.8]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  temp_of_extremities='warm'  and  mucous_membrane='pale_cyanotic' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  temp_of_extremities='warm'  and  capillary_refill_time='3' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  temp_of_extremities='warm'  and  abdominal_distention='slight'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  temp_of_extremities='warm'  and  packed_cell_volume='(22.948, 40.333]'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  peristalsis='hypermotile'  and  pain='mild_pain' => lived Prec:  1.0 Coverage:  0.043478260869565216
+#  peristalsis='hypermotile'  and  mucous_membrane='bright_pink' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  peristalsis='hypermotile'  and  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  abdominal_distention='none'  and  age='young' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  abdominal_distention='none'  and  mucous_membrane='pale_cyanotic' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  abdominal_distention='none'  and  pain='mild_pain'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  abdominal_distention='none'  and  pain='mild_pain'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  abdominal_distention='none'  and  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  abdominal_distention='none'  and  surgical_lesion='no'  and  abdomen='normal' => lived Prec:  1.0 Coverage:  0.06354515050167224
+#  abdominal_distention='none'  and  rectal_exam_feces='decreased'  and  nasogastric_reflux_ph='(0.994, 3.167]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  abdominal_distention='none'  and  nasogastric_reflux_ph='(0.994, 3.167]'  and  temp_of_extremities='cool' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  surgical_lesion='no'  and  rectal_exam_feces='normal'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.09364548494983277
+#  surgical_lesion='no'  and  pain='mild_pain'  and  rectal_temp='(37.2, 39.0]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  surgical_lesion='no'  and  pain='mild_pain'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  surgical_lesion='no'  and  mucous_membrane='bright_pink'  and  age='adult' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]'  and  nasogastric_tube='none' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  surgical_lesion='no'  and  surgery='no'  and  abdominal_distention='moderate' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='mild_pain'  and  temp_of_extremities='cold' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='mild_pain'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='mild_pain'  and  nasogastric_reflux_ph='nan' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='mild_pain'  and  rectal_exam_feces='decreased'  and  abdomen='distend_large' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='mild_pain'  and  rectal_exam_feces='decreased'  and  nasogastric_tube='none' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  mucous_membrane='bright_pink' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  abdominal_distention='moderate' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  nasogastric_reflux_ph='(3.167, 5.333]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  total_protein='(60.433, 89.0]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.043478260869565216
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  temp_of_extremities='normal'  and  abdomo_appearance='clear' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.056856187290969896
+#  peristalsis='normal'  and  rectal_exam_feces='normal' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  peristalsis='normal'  and  surgery='yes'  and  cp_data='yes' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  packed_cell_volume='(22.948, 40.333]'  and  total_protein='(31.867, 60.433]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  packed_cell_volume='(22.948, 40.333]'  and  abdomen='firm'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal'  and  rectal_exam_feces='decreased' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal'  and  nasogastric_tube='slight'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  packed_cell_volume='(22.948, 40.333]'  and  abdominal_distention='slight'  and  mucous_membrane='pale_pink'  and  peripheral_pulse='normal' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  temp_of_extremities='normal'  and  pain='depressed'  and  nasogastric_reflux_ph='(5.333, 7.5]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  temp_of_extremities='normal'  and  abdomo_protein='(3.433, 6.767]'  and  abdomen='distend_small' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  peripheral_pulse='normal'  and  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  peripheral_pulse='normal'  and  pulse='(29.846, 81.333]'  and  abdomo_appearance='clear'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  rectal_temp='(37.2, 39.0]'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  rectal_exam_feces='normal'  and  age='young'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  pulse='(29.846, 81.333]'  and  respiratory_rate='(66.667, 96.0]'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  total_protein='(60.433, 89.0]' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  capillary_refill_time='less_3_sec'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_exam_feces='decreased'  and  cp_data='no' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  capillary_refill_time='less_3_sec'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_temp='(37.2, 39.0]'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  capillary_refill_time='less_3_sec'  and  nasogastric_reflux='none'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  pulse='(81.333, 132.667]' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  capillary_refill_time='less_3_sec'  and  rectal_temp='(37.2, 39.0]'  and  total_protein='(60.433, 89.0]'  and  respiratory_rate='(37.333, 66.667]' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  abdominal_distention='slight'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(37.2, 39.0]'  and  packed_cell_volume='(40.333, 57.667]'  and  abdomo_appearance='cloudy'  and  nasogastric_tube='significant' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  rectal_temp='(37.2, 39.0]'  and  packed_cell_volume='(40.333, 57.667]'  and  cp_data='no'  and  nasogastric_tube='significant'  and  abdomen='distend_small' => lived Prec:  1.0 Coverage:  0.010033444816053512
+
+178  Rules (ordered by precision and coverage)
+-------------------------------------------------------------------------------------
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  surgery='no' => lived Prec:  1.0 Coverage:  0.13377926421404682
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  total_protein='(3.214, 31.867]' => lived Prec:  1.0 Coverage:  0.10702341137123746
+#  mucous_membrane='normal_pink'  and  temp_of_extremities='normal'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.10702341137123746
+#  mucous_membrane='normal_pink'  and  abdomo_protein='(3.433, 6.767]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.09364548494983277
+#  surgical_lesion='no'  and  rectal_exam_feces='normal'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.09364548494983277
+#  pain='alert'  and  mucous_membrane='normal_pink'  and  hospital_number='(513688.847, 2114193.667]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  surgical_lesion='no'  and  pain='mild_pain'  and  rectal_temp='(37.2, 39.0]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  surgical_lesion='no'  and  pain='mild_pain'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.08361204013377926
+#  mucous_membrane='normal_pink'  and  surgical_lesion='no'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.0802675585284281
+#  abdomen='other'  and  nasogastric_reflux='none'  and  peripheral_pulse='normal' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  abdominal_distention='none'  and  pain='mild_pain'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  abdominal_distention='none'  and  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal' => lived Prec:  1.0 Coverage:  0.06688963210702341
+#  mucous_membrane='normal_pink'  and  abdomo_appearance='clear'  and  temp_of_extremities='normal' => lived Prec:  1.0 Coverage:  0.06354515050167224
+#  abdominal_distention='none'  and  surgical_lesion='no'  and  abdomen='normal' => lived Prec:  1.0 Coverage:  0.06354515050167224
+#  mucous_membrane='normal_pink'  and  abdomo_appearance='clear'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]'  and  nasogastric_tube='none' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  peripheral_pulse='normal'  and  pulse='(29.846, 81.333]'  and  abdomo_appearance='clear'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  rectal_temp='(37.2, 39.0]'  and  respiratory_rate='(7.912, 37.333]' => lived Prec:  1.0 Coverage:  0.06020066889632107
+#  mucous_membrane='normal_pink'  and  abdomen='normal'  and  nasogastric_tube='slight' => lived Prec:  1.0 Coverage:  0.056856187290969896
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.056856187290969896
+#  peristalsis='hypermotile'  and  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  abdominal_distention='none'  and  pain='mild_pain'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  surgical_lesion='no'  and  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious' => lived Prec:  1.0 Coverage:  0.05016722408026756
+#  pain='alert'  and  abdomen='other' => lived Prec:  1.0 Coverage:  0.046822742474916385
+#  pain='alert'  and  abdomo_protein='(3.433, 6.767]' => lived Prec:  1.0 Coverage:  0.046822742474916385
+#  peristalsis='hypermotile'  and  pain='mild_pain' => lived Prec:  1.0 Coverage:  0.043478260869565216
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  total_protein='(60.433, 89.0]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.043478260869565216
+#  temp_of_extremities='warm'  and  packed_cell_volume='(22.948, 40.333]'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  surgical_lesion='no'  and  mucous_membrane='bright_pink'  and  age='adult' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  abdominal_distention='moderate' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  temp_of_extremities='normal'  and  abdomo_appearance='clear' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  total_protein='(60.433, 89.0]' => lived Prec:  1.0 Coverage:  0.04013377926421405
+#  mucous_membrane='normal_pink'  and  abdomen='normal'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  mucous_membrane='normal_pink'  and  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious'  and  nasogastric_reflux='none' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  temp_of_extremities='warm'  and  abdominal_distention='slight'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  packed_cell_volume='(22.948, 40.333]'  and  abdomo_appearance='serosanguious'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.03678929765886288
+#  abdomen='other'  and  packed_cell_volume='(22.948, 40.333]' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal'  and  nasogastric_tube='slight'  and  peristalsis='hypomotile' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  peripheral_pulse='normal'  and  pulse='(29.846, 81.333]'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_exam_feces='absent' => lived Prec:  1.0 Coverage:  0.033444816053511704
+#  pain='alert'  and  rectal_exam_feces='decreased' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  abdominal_distention='none'  and  rectal_exam_feces='decreased'  and  nasogastric_reflux_ph='(0.994, 3.167]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  surgical_lesion='no'  and  surgery='no'  and  abdominal_distention='moderate' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='mild_pain'  and  rectal_exam_feces='decreased'  and  abdomen='distend_large' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  nasogastric_reflux='none'  and  nasogastric_reflux_ph='(3.167, 5.333]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  peristalsis='normal'  and  rectal_exam_feces='normal' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  packed_cell_volume='(22.948, 40.333]'  and  temp_of_extremities='normal'  and  rectal_exam_feces='decreased' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  packed_cell_volume='(22.948, 40.333]'  and  abdominal_distention='slight'  and  mucous_membrane='pale_pink'  and  peripheral_pulse='normal' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  temp_of_extremities='normal'  and  pain='depressed'  and  nasogastric_reflux_ph='(5.333, 7.5]' => lived Prec:  1.0 Coverage:  0.030100334448160536
+#  pain='extreme_pain'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='severe_pain'  and  temp_of_extremities='normal' => died Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='alert'  and  mucous_membrane='pale_pink' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  abdominal_distention='none'  and  nasogastric_reflux_ph='(0.994, 3.167]'  and  temp_of_extremities='cool' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  pain='mild_pain'  and  temp_of_extremities='cold' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  packed_cell_volume='(22.948, 40.333]'  and  total_protein='(31.867, 60.433]'  and  capillary_refill_time='less_3_sec' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  packed_cell_volume='(22.948, 40.333]'  and  abdomen='firm'  and  pulse='(29.846, 81.333]' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  pulse='(29.846, 81.333]'  and  respiratory_rate='(66.667, 96.0]'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  capillary_refill_time='less_3_sec'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_exam_feces='decreased'  and  cp_data='no' => lived Prec:  1.0 Coverage:  0.026755852842809364
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  nasogastric_tube='none' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomo_appearance='clear'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  mucous_membrane='bright_red'  and  nasogastric_reflux='more_1_liter'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.023411371237458192
+#  pain='alert'  and  peristalsis='normal' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  pain='mild_pain'  and  rectal_exam_feces='decreased'  and  nasogastric_tube='none' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  rectal_temp='(37.2, 39.0]'  and  packed_cell_volume='(40.333, 57.667]'  and  abdomo_appearance='cloudy'  and  nasogastric_tube='significant' => lived Prec:  1.0 Coverage:  0.023411371237458192
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  surgery='no' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  total_protein='(3.214, 31.867]'  and  abdomo_appearance='serosanguious'  and  packed_cell_volume='(40.333, 57.667]' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  peristalsis='absent'  and  total_protein='(3.214, 31.867]'  and  nasogastric_reflux='less_1_liter'  and  cp_data='no' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  peripheral_pulse='reduced'  and  nasogastric_reflux='less_1_liter'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.020066889632107024
+#  abdomen='other'  and  peristalsis='hypermotile' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  peristalsis='hypermotile'  and  mucous_membrane='bright_pink' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  peristalsis='normal'  and  surgery='yes'  and  cp_data='yes' => lived Prec:  1.0 Coverage:  0.020066889632107024
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  temp_of_extremities='cool' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  pain='depressed' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  packed_cell_volume='(57.667, 75.0]'  and  mucous_membrane='bright_red'  and  nasogastric_reflux_ph='(5.333, 7.5]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  mucous_membrane='pale_pink' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pain='extreme_pain'  and  abdominal_distention='moderate'  and  nasogastric_reflux_ph='(0.994, 3.167]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  pulse='(81.333, 132.667]'  and  cp_data='yes'  and  peripheral_pulse='normal'  and  rectal_temp='(37.2, 39.0]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  temp_of_extremities='cool'  and  total_protein='(3.214, 31.867]'  and  surgery='yes'  and  peristalsis='hypomotile'  and  nasogastric_reflux='more_1_liter'  and  abdomo_protein='(0.09, 3.433]' => died Prec:  1.0 Coverage:  0.016722408026755852
+#  abdomen='other'  and  nasogastric_reflux_ph='(0.994, 3.167]' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  temp_of_extremities='normal'  and  abdomo_protein='(3.433, 6.767]'  and  abdomen='distend_small' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  capillary_refill_time='less_3_sec'  and  rectal_temp='(37.2, 39.0]'  and  total_protein='(60.433, 89.0]'  and  respiratory_rate='(37.333, 66.667]' => lived Prec:  1.0 Coverage:  0.016722408026755852
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomen='normal' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='bright_red'  and  rectal_exam_feces='normal'  and  surgery='yes' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  age='young'  and  abdomo_appearance='serosanguious'  and  surgery='yes' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  cp_data='yes'  and  nasogastric_reflux='more_1_liter' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  cp_data='yes'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='severe_pain'  and  cp_data='yes'  and  abdomo_protein='(3.433, 6.767]' => died Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='bright_red'  and  surgical_lesion='no'  and  pulse='(81.333, 132.667]'  and  peristalsis='hypomotile' => euthanized Prec:  1.0 Coverage:  0.013377926421404682
+#  total_protein='(60.433, 89.0]'  and  temp_of_extremities='cold'  and  abdomen='distend_large' => euthanized Prec:  1.0 Coverage:  0.013377926421404682
+#  pain='alert'  and  total_protein='(31.867, 60.433]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  abdomen='other'  and  rectal_exam_feces='increased' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='normal_pink'  and  lesion_1='(27406.667, 41110.0]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  mucous_membrane='normal_pink'  and  abdominal_distention='none'  and  rectal_exam_feces='increased' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  temp_of_extremities='warm'  and  rectal_temp='(39.0, 40.8]' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  temp_of_extremities='warm'  and  mucous_membrane='pale_cyanotic' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  abdominal_distention='none'  and  age='young' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  rectal_exam_feces='normal'  and  age='young'  and  surgery='yes' => lived Prec:  1.0 Coverage:  0.013377926421404682
+#  pulse='(132.667, 184.0]'  and  mucous_membrane='dark_cyanotic' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  pain='extreme_pain' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  abdominal_distention='moderate' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(132.667, 184.0]'  and  nasogastric_reflux='less_1_liter' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  abdomo_protein='(6.767, 10.1]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  abdominal_distention='slight'  and  nasogastric_tube='none' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  pain='extreme_pain'  and  abdomo_appearance='cloudy' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  temp_of_extremities='cool'  and  nasogastric_reflux_ph='(3.167, 5.333]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  packed_cell_volume='(57.667, 75.0]'  and  temp_of_extremities='cool'  and  abdomen='distend_small' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pain='extreme_pain'  and  nasogastric_reflux='less_1_liter'  and  temp_of_extremities='cold' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='bright_red'  and  hospital_number='(3709911.333, 5305629.0]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  age='young'  and  rectal_exam_feces='absent'  and  abdominal_distention='moderate' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  pulse='(81.333, 132.667]'  and  rectal_exam_feces='increased'  and  total_protein='(3.214, 31.867]' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  peripheral_pulse='reduced'  and  nasogastric_reflux='less_1_liter'  and  abdomen='normal'  and  temp_of_extremities='cool' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  peripheral_pulse='reduced'  and  total_protein='(3.214, 31.867]'  and  temp_of_extremities='cool'  and  cp_data='no'  and  peristalsis='hypomotile'  and  pain='mild_pain' => died Prec:  1.0 Coverage:  0.010033444816053512
+#  nasogastric_reflux_ph='nan'  and  packed_cell_volume='(40.333, 57.667]'  and  rectal_temp='(37.2, 39.0]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='bright_red'  and  total_protein='(60.433, 89.0]'  and  pulse='(81.333, 132.667]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  total_protein='(31.867, 60.433]'  and  pain='extreme_pain'  and  nasogastric_reflux_ph='(5.333, 7.5]' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  abdominal_distention='severe'  and  packed_cell_volume='(22.948, 40.333]'  and  age='adult' => euthanized Prec:  1.0 Coverage:  0.010033444816053512
+#  lesion_2='3111' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  mucous_membrane='normal_pink'  and  temp_of_extremities='cold' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  abdominal_distention='none'  and  mucous_membrane='pale_cyanotic' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  rectal_temp='(37.2, 39.0]'  and  packed_cell_volume='(40.333, 57.667]'  and  cp_data='no'  and  nasogastric_tube='significant'  and  abdomen='distend_small' => lived Prec:  1.0 Coverage:  0.010033444816053512
+#  pain='extreme_pain'  and  abdomo_protein='(6.767, 10.1]' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='severe_pain'  and  abdomen='distend_small'  and  abdomo_appearance='clear' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  hospital_number='(3709911.333, 5305629.0]'  and  pain='alert' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  pulse='(81.333, 132.667]'  and  abdomo_protein='(6.767, 10.1]'  and  abdominal_distention='severe' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  peristalsis='absent'  and  mucous_membrane='bright_pink'  and  cp_data='yes' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='reduced'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  abdomo_protein='(0.09, 3.433]'  and  abdomo_appearance='serosanguious' => died Prec:  1.0 Coverage:  0.006688963210702341
+#  nasogastric_reflux_ph='nan'  and  peripheral_pulse='increased' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='absent'  and  rectal_temp='(39.0, 40.8]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='absent'  and  nasogastric_tube='none' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  peripheral_pulse='absent'  and  peristalsis='absent'  and  abdominal_distention='severe' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  rectal_temp='(35.395, 37.2]'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  surgery='no' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  total_protein='(31.867, 60.433]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  rectal_temp='(39.0, 40.8]'  and  pulse='(81.333, 132.667]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  rectal_temp='(39.0, 40.8]'  and  capillary_refill_time='more_3_sec' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='pale_cyanotic'  and  surgery='no'  and  pain='depressed' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='bright_red'  and  abdomen='firm'  and  respiratory_rate='(7.912, 37.333]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  total_protein='(60.433, 89.0]'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  pain='depressed' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  total_protein='(31.867, 60.433]'  and  surgery='yes'  and  respiratory_rate='(37.333, 66.667]' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  abdominal_distention='severe'  and  nasogastric_reflux_ph='(0.994, 3.167]'  and  respiratory_rate='(37.333, 66.667]'  and  mucous_membrane='dark_cyanotic' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='severe_pain'  and  capillary_refill_time='more_3_sec'  and  rectal_exam_feces='normal' => euthanized Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='alert'  and  abdomen='firm' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  mucous_membrane='normal_pink'  and  abdominal_distention='severe' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='mild_pain'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  pain='mild_pain'  and  pulse='(29.846, 81.333]'  and  mucous_membrane='bright_pink' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  capillary_refill_time='less_3_sec'  and  nasogastric_reflux='none'  and  nasogastric_reflux_ph='(3.167, 5.333]'  and  pulse='(81.333, 132.667]' => lived Prec:  1.0 Coverage:  0.006688963210702341
+#  packed_cell_volume='(57.667, 75.0]'  and  mucous_membrane='normal_pink' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  packed_cell_volume='(57.667, 75.0]'  and  nasogastric_reflux_ph='nan' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  packed_cell_volume='(57.667, 75.0]'  and  lesion_1='(27406.667, 41110.0]' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='extreme_pain'  and  capillary_refill_time='3' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  age='young'  and  mucous_membrane='pale_cyanotic' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  age='young'  and  pain='alert' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  peristalsis='absent'  and  mucous_membrane='bright_pink'  and  surgery='no' => died Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='1400' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  nasogastric_reflux_ph='nan'  and  abdomen='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  peripheral_pulse='increased'  and  packed_cell_volume='(22.948, 40.333]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  pulse='(132.667, 184.0]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  mucous_membrane='dark_cyanotic' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  rectal_temp='(35.395, 37.2]'  and  peristalsis='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='pale_cyanotic'  and  peristalsis='hypermotile' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='pale_cyanotic'  and  total_protein='(60.433, 89.0]'  and  peristalsis='hypomotile' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='bright_red'  and  peristalsis='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='bright_red'  and  surgical_lesion='no'  and  rectal_exam_feces='normal' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  mucous_membrane='bright_red'  and  total_protein='(31.867, 60.433]'  and  surgery='yes' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  rectal_exam_feces='increased' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  capillary_refill_time='more_3_sec'  and  mucous_membrane='pale_pink' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(60.433, 89.0]'  and  peristalsis='normal'  and  temp_of_extremities='cool' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  total_protein='(31.867, 60.433]'  and  packed_cell_volume='(57.667, 75.0]' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='severe_pain'  and  capillary_refill_time='more_3_sec'  and  mucous_membrane='normal_pink' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  abdomen='distend_large'  and  rectal_exam_feces='normal'  and  abdominal_distention='none'  and  temp_of_extremities='cool' => euthanized Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_1='(13703.333, 27406.667]' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='7111' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='6112' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  lesion_2='3112' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  temp_of_extremities='warm'  and  capillary_refill_time='3' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  pain='mild_pain'  and  nasogastric_reflux_ph='nan' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  capillary_refill_time='less_3_sec'  and  abdomo_protein='(3.433, 6.767]'  and  rectal_temp='(37.2, 39.0]'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  abdominal_distention='slight'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  mucous_membrane='dark_cyanotic' => lived Prec:  1.0 Coverage:  0.0033444816053511705
+#  pulse='(81.333, 132.667]'  and  cp_data='yes'  and  abdomo_protein='(3.433, 6.767]'  and  nasogastric_reflux='none'  and  respiratory_rate='(7.912, 37.333]'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  total_protein='(3.214, 31.867]'  and  lesion_1='(-41.11, 13703.333]'  and  lesion_2='0'  and  lesion_3='0'  and  age='adult'  and  hospital_number='(513688.847, 2114193.667]'  and  surgical_lesion='yes'  and  peristalsis='hypomotile'  and  packed_cell_volume='(40.333, 57.667]'  and  abdomo_appearance='serosanguious'  and  temp_of_extremities='cool'  and  peripheral_pulse='reduced'  and  surgery='no'  and  rectal_temp='(39.0, 40.8]'  and  mucous_membrane='normal_pink'  and  capillary_refill_time='more_3_sec'  and  pain='depressed'  and  abdominal_distention='moderate'  and  nasogastric_tube='slight'  and  rectal_exam_feces='normal'  and  abdomen='distend_large' => died Prec:  0.5 Coverage:  0.0033444816053511705
+#  rectal_temp='(39.0, 40.8]'  and  packed_cell_volume='(40.333, 57.667]'  and  pulse='(81.333, 132.667]'  and  hospital_number='(513688.847, 2114193.667]'  and  lesion_1='(-41.11, 13703.333]'  and  lesion_2='0'  and  lesion_3='0'  and  age='adult'  and  nasogastric_tube='slight'  and  capillary_refill_time='more_3_sec'  and  abdominal_distention='moderate'  and  nasogastric_reflux='none'  and  surgery='no'  and  respiratory_rate='(7.912, 37.333]'  and  temp_of_extremities='cool'  and  peripheral_pulse='reduced'  and  mucous_membrane='normal_pink'  and  pain='depressed'  and  peristalsis='hypomotile'  and  nasogastric_reflux_ph='(5.333, 7.5]'  and  rectal_exam_feces='normal'  and  abdomen='distend_large'  and  total_protein='(3.214, 31.867]'  and  abdomo_appearance='serosanguious'  and  abdomo_protein='(3.433, 6.767]'  and  surgical_lesion='yes'  and  cp_data='yes' => euthanized Prec:  0.5 Coverage:  0.0033444816053511705
+
+Process finished with exit code 0

@@ -1,0 +1,364 @@
+C:\Users\Usuario\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/Usuario/Documents/Universidad/Master/SEL/PW1/main.py
+Error [0.5, 0.3793103448275862, 0.3793103448275862, 0.3103448275862069, 0.5517241379310345, 0.32142857142857145, 0.25, 0.39285714285714285, 0.5, 0.25]
+Mean error 0.3834975369458128
+Std error 0.10020756686056176
+
+NaNs [0.16666666666666666, 0.034482758620689655, 0.034482758620689655, 0.10344827586206896, 0.13793103448275862, 0.07142857142857142, 0.07142857142857142, 0.03571428571428571, 0.17857142857142858, 0.07142857142857142]
+Mean NaN rate 0.0905582922824302
+Std NaN rate 0.051326172522684156
+
+Time [77.52833938598633, 68.08701014518738, 84.45756363868713, 75.86549425125122, 72.27209782600403, 75.57311654090881, 73.78392338752747, 75.77399134635925, 69.98658347129822, 81.71472883224487]
+Mean time 75.50428488254548
+Std time 4.71066060109871
+
+172  Rules (discovery order)
+-------------------------------------------------------------------------------------
+#  tumor_size='5-9' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  age='20-29' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='10-14'  and  node_caps='no' => no-recurrence-events Prec:  1.0 Coverage:  0.0944055944055944
+#  tumor_size='0-4'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  tumor_size='0-4'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  tumor_size='0-4'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  tumor_size='0-4'  and  inv_nodes='0-2'  and  node_caps='no'  and  irradiat='no'  and  breast_quad='central'  and  menopause='premeno'  and  age='30-39'  and  deg_malig='2'  and  breast='right' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  age='70-79'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='1'  and  breast_quad='central' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='1'  and  breast_quad='right_low' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='1'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='1'  and  tumor_size='50-54' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  menopause='ge40'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.05244755244755245
+#  deg_malig='1'  and  menopause='ge40'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='1'  and  menopause='ge40'  and  irradiat='no'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.05244755244755245
+#  deg_malig='1'  and  menopause='ge40'  and  irradiat='no'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  tumor_size='25-29'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='1'  and  tumor_size='25-29'  and  breast_quad='left_low' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  tumor_size='25-29'  and  node_caps='no'  and  inv_nodes='0-2'  and  irradiat='no'  and  menopause='premeno'  and  age='50-59'  and  breast='right'  and  breast_quad='left_up' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  age='60-69'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  deg_malig='1'  and  age='50-59'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='1'  and  age='50-59'  and  node_caps='no'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.038461538461538464
+#  deg_malig='1'  and  irradiat='no'  and  breast_quad='right_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='1'  and  irradiat='no'  and  tumor_size='30-34'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='1'  and  irradiat='no'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='35-39' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast_quad='left_low'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  inv_nodes='0-2'  and  age='40-49'  and  breast='right'  and  tumor_size='40-44' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast_quad='central'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='central'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='central'  and  tumor_size='45-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast_quad='central'  and  breast='left'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  breast_quad='central'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  tumor_size='45-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  breast_quad='right_low'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  deg_malig='2'  and  tumor_size='40-44'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  tumor_size='40-44'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  tumor_size='40-44'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  tumor_size='15-19'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  deg_malig='2'  and  tumor_size='15-19'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  tumor_size='15-19'  and  breast_quad='left_low'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  tumor_size='35-39'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  tumor_size='35-39'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  inv_nodes='6-8'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='6-8'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='6-8'  and  irradiat='no' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  breast_quad='left_up'  and  age='60-69' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  deg_malig='2'  and  breast_quad='left_up'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  breast_quad='left_up'  and  menopause='ge40'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  breast_quad='left_up'  and  menopause='ge40'  and  breast='right'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  breast='right'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  menopause='premeno'  and  node_caps='no'  and  irradiat='no'  and  breast='left'  and  age='30-39'  and  tumor_size='30-34' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  breast_quad='left_up'  and  breast='right'  and  tumor_size='20-24'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='0-2'  and  age='60-69'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  deg_malig='2'  and  inv_nodes='0-2'  and  age='60-69'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  menopause='ge40'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  tumor_size='50-54' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  age='30-39'  and  breast_quad='left_low' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  breast_quad='left_low'  and  irradiat='no'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  breast_quad='left_low'  and  irradiat='no'  and  node_caps='no'  and  age='40-49'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  breast_quad='right_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  menopause='premeno'  and  node_caps='no'  and  age='40-49'  and  tumor_size='25-29'  and  breast_quad='left_low' => no-recurrence-events Prec:  0.3333333333333333 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  menopause='premeno'  and  node_caps='no'  and  age='30-39'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  node_caps='no'  and  irradiat='no'  and  breast_quad='left_low'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  irradiat='no'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  irradiat='no'  and  breast_quad='left_low'  and  age='50-59'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  age='50-59'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  tumor_size='15-19'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.04895104895104895
+#  inv_nodes='0-2'  and  tumor_size='15-19'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  breast='left'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  tumor_size='40-44' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  breast='right'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  breast_quad='left_up'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast='left'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  menopause='ge40'  and  irradiat='no'  and  tumor_size='25-29'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  age='50-59'  and  breast='right'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  age='50-59'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='0-2'  and  irradiat='no'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.027972027972027972
+#  inv_nodes='0-2'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  irradiat='no'  and  node_caps='no'  and  breast='right'  and  breast_quad='right_up'  and  menopause='premeno'  and  age='40-49'  and  tumor_size='30-34'  and  deg_malig='3' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  breast_quad='left_low'  and  node_caps='no'  and  tumor_size='20-24'  and  irradiat='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  breast_quad='left_low'  and  breast='right'  and  tumor_size='35-39' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  node_caps='no'  and  age='40-49'  and  breast='right'  and  menopause='premeno'  and  breast_quad='left_up'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  age='40-49'  and  irradiat='yes'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='no'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  node_caps='no'  and  inv_nodes='12-14' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  node_caps='no'  and  tumor_size='40-44'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='no'  and  age='50-59'  and  inv_nodes='9-11' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='no'  and  menopause='ge40'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='no'  and  menopause='ge40'  and  tumor_size='25-29'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  irradiat='no'  and  menopause='ge40'  and  breast='left'  and  age='60-69'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  breast_quad='left_up'  and  tumor_size='40-44'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='24-26' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='12-14'  and  node_caps='yes' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='9-11'  and  irradiat='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='9-11'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='9-11'  and  age='70-79' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='9-11'  and  breast_quad='right_low' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  breast_quad='right_low' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='6-8'  and  tumor_size='40-44' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='6-8'  and  tumor_size='15-19' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  tumor_size='35-39' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  tumor_size='10-14' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  deg_malig='3'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='6-8'  and  deg_malig='3'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  menopause='lt40' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  node_caps='yes'  and  deg_malig='3'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='yes'  and  deg_malig='3'  and  tumor_size='15-19' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  deg_malig='3'  and  breast_quad='right_up' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  deg_malig='3'  and  breast='left'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.038461538461538464
+#  node_caps='yes'  and  deg_malig='3'  and  breast='left'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.027972027972027972
+#  node_caps='yes'  and  deg_malig='3'  and  breast_quad='left_low'  and  tumor_size='40-44' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  breast='left'  and  age='40-49' => recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  node_caps='yes'  and  breast='left'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  node_caps='yes'  and  breast='left'  and  irradiat='yes'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  age='60-69'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='yes'  and  breast_quad='right_up'  and  inv_nodes='3-5' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  tumor_size='50-54' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  breast_quad='right_low'  and  breast='left' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='3'  and  inv_nodes='3-5'  and  tumor_size='20-24' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  inv_nodes='3-5'  and  breast_quad='left_low'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  inv_nodes='3-5'  and  node_caps='no'  and  menopause='ge40' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  inv_nodes='3-5'  and  node_caps='no'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  age='30-39'  and  tumor_size='35-39' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  age='30-39'  and  irradiat='yes'  and  breast='left' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  irradiat='yes'  and  tumor_size='25-29'  and  breast_quad='left_low' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  irradiat='yes'  and  age='60-69'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  irradiat='yes'  and  age='50-59'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  tumor_size='25-29'  and  breast='left'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='3'  and  tumor_size='25-29'  and  breast='left'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  breast_quad='right_up'  and  tumor_size='30-34'  and  age='50-59' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  breast_quad='right_up'  and  tumor_size='30-34'  and  inv_nodes='0-2'  and  irradiat='no'  and  menopause='premeno'  and  age='40-49'  and  breast='right'  and  node_caps='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  age='60-69'  and  tumor_size='20-24' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  age='60-69'  and  menopause='ge40'  and  breast='right'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='3-5'  and  breast_quad='right_up'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='3-5'  and  tumor_size='30-34'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='3-5'  and  breast='left'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  irradiat='yes'  and  tumor_size='30-34'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  irradiat='yes'  and  breast='left'  and  tumor_size='25-29'  and  breast_quad='left_low'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='yes'  and  menopause='ge40'  and  breast_quad='right_up' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='yes'  and  breast_quad='left_low'  and  tumor_size='50-54' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='30-34'  and  age='30-39'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='30-34'  and  age='30-39'  and  breast_quad='left_up'  and  menopause='premeno'  and  node_caps='no'  and  inv_nodes='0-2'  and  irradiat='no'  and  deg_malig='2'  and  breast='left' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  age='30-39'  and  breast_quad='left_up'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  age='30-39'  and  breast_quad='left_low'  and  menopause='premeno'  and  tumor_size='15-19'  and  breast='right' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  age='30-39'  and  tumor_size='0-4'  and  menopause='premeno'  and  inv_nodes='0-2'  and  node_caps='no'  and  deg_malig='2'  and  breast='right'  and  breast_quad='central'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  breast_quad='right_up'  and  tumor_size='25-29'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  tumor_size='35-39'  and  breast_quad='left_low'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='35-39'  and  deg_malig='1'  and  breast='right' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='25-29'  and  age='40-49'  and  breast_quad='left_low'  and  menopause='premeno'  and  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  breast='right'  and  irradiat='no' => recurrence-events Prec:  0.6666666666666666 Coverage:  0.006993006993006993
+#  tumor_size='25-29'  and  menopause='premeno'  and  age='50-59'  and  inv_nodes='0-2'  and  breast='right'  and  node_caps='no'  and  deg_malig='1'  and  breast_quad='left_up'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  breast='left'  and  tumor_size='40-44'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  breast='left'  and  menopause='premeno'  and  tumor_size='15-19'  and  breast_quad='left_up' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast='left'  and  menopause='premeno'  and  tumor_size='15-19'  and  deg_malig='2'  and  age='50-59' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast='left'  and  menopause='premeno'  and  breast_quad='left_low'  and  tumor_size='20-24'  and  age='40-49'  and  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  breast='left'  and  tumor_size='20-24'  and  age='50-59'  and  inv_nodes='0-2'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='20-24'  and  age='60-69'  and  breast='right'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='20-24'  and  menopause='ge40'  and  breast_quad='central' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='20-24'  and  menopause='ge40'  and  breast='right'  and  age='40-49' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  breast_quad='left_low'  and  tumor_size='40-44'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+
+172  Rules (ordered by precision and coverage)
+-------------------------------------------------------------------------------------
+#  tumor_size='10-14'  and  node_caps='no' => no-recurrence-events Prec:  1.0 Coverage:  0.0944055944055944
+#  deg_malig='1'  and  menopause='ge40'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.05244755244755245
+#  deg_malig='1'  and  menopause='ge40'  and  irradiat='no'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.05244755244755245
+#  inv_nodes='0-2'  and  tumor_size='15-19'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.04895104895104895
+#  deg_malig='1'  and  age='50-59'  and  node_caps='no'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.038461538461538464
+#  node_caps='yes'  and  deg_malig='3'  and  breast='left'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.038461538461538464
+#  deg_malig='1'  and  age='60-69'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  deg_malig='2'  and  breast_quad='right_low'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  deg_malig='2'  and  inv_nodes='0-2'  and  age='60-69'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.03496503496503497
+#  breast_quad='central'  and  breast='left'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  deg_malig='2'  and  tumor_size='15-19'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  deg_malig='2'  and  breast_quad='left_up'  and  age='60-69' => no-recurrence-events Prec:  1.0 Coverage:  0.03146853146853147
+#  inv_nodes='0-2'  and  irradiat='no'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.027972027972027972
+#  node_caps='yes'  and  deg_malig='3'  and  breast='left'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.027972027972027972
+#  deg_malig='1'  and  breast_quad='central' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='1'  and  breast_quad='right_low' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  tumor_size='15-19'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  breast_quad='left_up'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  breast='right'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  irradiat='no'  and  menopause='ge40'  and  tumor_size='25-29'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.024475524475524476
+#  deg_malig='1'  and  menopause='ge40'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='1'  and  irradiat='no'  and  breast_quad='right_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='1'  and  irradiat='no'  and  tumor_size='30-34'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  breast_quad='left_low'  and  irradiat='no'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  breast_quad='right_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  deg_malig='2'  and  age='50-59'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  breast='right'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  breast_quad='left_up'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  breast_quad='left_up'  and  tumor_size='40-44'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  inv_nodes='6-8'  and  deg_malig='3'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  node_caps='yes'  and  breast='left'  and  age='40-49' => recurrence-events Prec:  1.0 Coverage:  0.02097902097902098
+#  age='70-79'  and  inv_nodes='0-2' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='1'  and  tumor_size='25-29'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast_quad='left_low'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  tumor_size='35-39'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  breast_quad='left_up'  and  irradiat='yes'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='2'  and  inv_nodes='0-2'  and  menopause='ge40'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  irradiat='no'  and  menopause='ge40'  and  breast='left'  and  age='60-69'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  node_caps='yes'  and  breast='left'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='3'  and  breast_quad='right_low'  and  breast='left' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  deg_malig='3'  and  tumor_size='25-29'  and  breast='left'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  inv_nodes='3-5'  and  tumor_size='30-34'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.017482517482517484
+#  tumor_size='5-9' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  tumor_size='0-4'  and  menopause='ge40' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  tumor_size='0-4'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  menopause='ge40'  and  irradiat='no'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  tumor_size='25-29'  and  breast_quad='left_low' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  tumor_size='40-44'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  tumor_size='40-44'  and  breast='left' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='6-8'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='6-8'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='6-8'  and  irradiat='no' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  breast_quad='left_up'  and  menopause='ge40'  and  breast='right'  and  age='50-59' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  breast_quad='left_up'  and  breast='right'  and  tumor_size='20-24'  and  menopause='premeno' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  menopause='ge40'  and  age='50-59'  and  tumor_size='40-44' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast='left'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  menopause='ge40'  and  irradiat='no'  and  tumor_size='25-29'  and  breast='right' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  inv_nodes='0-2'  and  age='40-49'  and  irradiat='yes'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='no'  and  tumor_size='40-44'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='yes'  and  deg_malig='3'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  node_caps='yes'  and  age='60-69'  and  irradiat='yes' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  inv_nodes='3-5'  and  node_caps='no'  and  menopause='ge40' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  inv_nodes='3-5'  and  node_caps='no'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  age='30-39'  and  irradiat='yes'  and  breast='left' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='3'  and  irradiat='yes'  and  tumor_size='25-29'  and  breast_quad='left_low' => recurrence-events Prec:  1.0 Coverage:  0.013986013986013986
+#  deg_malig='1'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='1'  and  age='50-59'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='1'  and  irradiat='no'  and  tumor_size='30-34'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='central'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='central'  and  tumor_size='15-19' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='central'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  tumor_size='40-44'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  tumor_size='35-39'  and  breast_quad='left_up' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  breast_quad='left_up'  and  menopause='ge40'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  irradiat='no'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='2'  and  irradiat='no'  and  breast_quad='left_low'  and  age='50-59'  and  node_caps='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  breast='left'  and  deg_malig='3' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='0-2'  and  age='50-59'  and  breast_quad='left_low'  and  tumor_size='30-34' => no-recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='9-11'  and  irradiat='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='6-8'  and  breast_quad='right_low' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='6-8'  and  deg_malig='3'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  deg_malig='3'  and  tumor_size='15-19' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  deg_malig='3'  and  breast_quad='right_up' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  deg_malig='3'  and  breast_quad='left_low'  and  tumor_size='40-44' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  breast='left'  and  irradiat='yes'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  node_caps='yes'  and  breast_quad='right_up'  and  inv_nodes='3-5' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  inv_nodes='3-5'  and  breast_quad='left_low'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  age='30-39'  and  tumor_size='35-39' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  deg_malig='3'  and  irradiat='yes'  and  age='50-59'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='3-5'  and  breast_quad='right_up'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  inv_nodes='3-5'  and  breast='left'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  breast_quad='right_up'  and  tumor_size='25-29'  and  menopause='premeno' => recurrence-events Prec:  1.0 Coverage:  0.01048951048951049
+#  tumor_size='0-4'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  age='60-69'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  tumor_size='50-54' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  age='30-39'  and  breast_quad='left_low' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  tumor_size='15-19'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  menopause='ge40'  and  breast_quad='left_low'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='0-2'  and  node_caps='no'  and  age='40-49'  and  breast='right'  and  menopause='premeno'  and  breast_quad='left_up'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  node_caps='no'  and  age='50-59'  and  inv_nodes='9-11' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='no'  and  menopause='ge40'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='12-14'  and  node_caps='yes' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='9-11'  and  age='30-39' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  inv_nodes='6-8'  and  tumor_size='40-44' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  node_caps='yes'  and  menopause='lt40' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  inv_nodes='3-5'  and  tumor_size='20-24' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  tumor_size='25-29'  and  breast='left'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  breast_quad='right_up'  and  tumor_size='30-34'  and  age='50-59' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  age='60-69'  and  tumor_size='20-24' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  deg_malig='3'  and  age='60-69'  and  menopause='ge40'  and  breast='right'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='yes'  and  breast='left'  and  tumor_size='25-29'  and  breast_quad='left_low'  and  node_caps='no' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  irradiat='yes'  and  menopause='ge40'  and  breast_quad='right_up' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  age='30-39'  and  breast_quad='left_up'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  breast='left'  and  tumor_size='40-44'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  tumor_size='20-24'  and  menopause='ge40'  and  breast='right'  and  age='40-49' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  breast_quad='left_low'  and  tumor_size='40-44'  and  age='60-69' => recurrence-events Prec:  1.0 Coverage:  0.006993006993006993
+#  age='20-29' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  tumor_size='50-54' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  breast='left'  and  tumor_size='35-39' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  irradiat='no'  and  node_caps='no'  and  inv_nodes='0-2'  and  age='40-49'  and  breast='right'  and  tumor_size='40-44' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast_quad='central'  and  tumor_size='45-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  tumor_size='45-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  tumor_size='15-19'  and  breast_quad='left_low'  and  age='40-49' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  menopause='premeno'  and  node_caps='no'  and  age='30-39'  and  tumor_size='25-29' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  node_caps='no'  and  irradiat='no'  and  breast_quad='left_low'  and  inv_nodes='3-5' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  age='50-59'  and  breast='right'  and  menopause='lt40' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  breast_quad='left_low'  and  node_caps='no'  and  tumor_size='20-24'  and  irradiat='yes' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  breast_quad='left_low'  and  breast='right'  and  tumor_size='35-39' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  node_caps='no'  and  inv_nodes='15-17' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  node_caps='no'  and  inv_nodes='12-14' => no-recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='24-26' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='9-11'  and  age='70-79' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='9-11'  and  breast_quad='right_low' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  tumor_size='15-19' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  tumor_size='35-39' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  inv_nodes='6-8'  and  tumor_size='10-14' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  tumor_size='50-54' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  irradiat='yes'  and  age='60-69'  and  tumor_size='30-34' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  irradiat='yes'  and  tumor_size='30-34'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  irradiat='yes'  and  breast_quad='left_low'  and  tumor_size='50-54' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='30-34'  and  age='30-39'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  age='30-39'  and  breast_quad='left_low'  and  menopause='premeno'  and  tumor_size='15-19'  and  breast='right' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='35-39'  and  breast_quad='left_low'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='35-39'  and  deg_malig='1'  and  breast='right' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast='left'  and  menopause='premeno'  and  tumor_size='15-19'  and  breast_quad='left_up' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast='left'  and  menopause='premeno'  and  tumor_size='15-19'  and  deg_malig='2'  and  age='50-59' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  breast='left'  and  tumor_size='20-24'  and  age='50-59'  and  inv_nodes='0-2'  and  deg_malig='2' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='20-24'  and  age='60-69'  and  breast='right'  and  deg_malig='1' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='20-24'  and  menopause='ge40'  and  breast_quad='central' => recurrence-events Prec:  1.0 Coverage:  0.0034965034965034965
+#  tumor_size='25-29'  and  age='40-49'  and  breast_quad='left_low'  and  menopause='premeno'  and  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  breast='right'  and  irradiat='no' => recurrence-events Prec:  0.6666666666666666 Coverage:  0.006993006993006993
+#  tumor_size='0-4'  and  inv_nodes='0-2'  and  node_caps='no'  and  irradiat='no'  and  breast_quad='central'  and  menopause='premeno'  and  age='30-39'  and  deg_malig='2'  and  breast='right' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='1'  and  tumor_size='25-29'  and  node_caps='no'  and  inv_nodes='0-2'  and  irradiat='no'  and  menopause='premeno'  and  age='50-59'  and  breast='right'  and  breast_quad='left_up' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  breast_quad='left_up'  and  inv_nodes='0-2'  and  menopause='premeno'  and  node_caps='no'  and  irradiat='no'  and  breast='left'  and  age='30-39'  and  tumor_size='30-34' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  breast='left'  and  breast_quad='left_low'  and  irradiat='no'  and  node_caps='no'  and  age='40-49'  and  menopause='premeno'  and  tumor_size='20-24' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  inv_nodes='0-2'  and  irradiat='no'  and  node_caps='no'  and  breast='right'  and  breast_quad='right_up'  and  menopause='premeno'  and  age='40-49'  and  tumor_size='30-34'  and  deg_malig='3' => no-recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='3'  and  breast_quad='right_up'  and  tumor_size='30-34'  and  inv_nodes='0-2'  and  irradiat='no'  and  menopause='premeno'  and  age='40-49'  and  breast='right'  and  node_caps='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  tumor_size='30-34'  and  age='30-39'  and  breast_quad='left_up'  and  menopause='premeno'  and  node_caps='no'  and  inv_nodes='0-2'  and  irradiat='no'  and  deg_malig='2'  and  breast='left' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  age='30-39'  and  tumor_size='0-4'  and  menopause='premeno'  and  inv_nodes='0-2'  and  node_caps='no'  and  deg_malig='2'  and  breast='right'  and  breast_quad='central'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  tumor_size='25-29'  and  menopause='premeno'  and  age='50-59'  and  inv_nodes='0-2'  and  breast='right'  and  node_caps='no'  and  deg_malig='1'  and  breast_quad='left_up'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  breast='left'  and  menopause='premeno'  and  breast_quad='left_low'  and  tumor_size='20-24'  and  age='40-49'  and  deg_malig='2'  and  inv_nodes='0-2'  and  node_caps='no'  and  irradiat='no' => recurrence-events Prec:  0.5 Coverage:  0.0034965034965034965
+#  deg_malig='2'  and  inv_nodes='0-2'  and  irradiat='no'  and  breast='right'  and  menopause='premeno'  and  node_caps='no'  and  age='40-49'  and  tumor_size='25-29'  and  breast_quad='left_low' => no-recurrence-events Prec:  0.3333333333333333 Coverage:  0.0034965034965034965
+
+Process finished with exit code 0

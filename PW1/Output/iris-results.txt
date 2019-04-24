@@ -1,0 +1,48 @@
+C:\Users\Usuario\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/Usuario/Documents/Universidad/Master/SEL/PW1/main.py
+Error [0.0, 0.06666666666666667, 0.0, 0.06666666666666667, 0.06666666666666667, 0.06666666666666667, 0.26666666666666666, 0.06666666666666667, 0.0, 0.06666666666666667]
+Mean error 0.06666666666666667
+Std error 0.07302967433402216
+
+NaNs [0.0, 0.06666666666666667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Mean NaN rate 0.006666666666666666
+Std NaN rate 0.019999999999999997
+
+Time [1.1315701007843018, 0.9981033802032471, 1.1004929542541504, 0.7448065280914307, 1.0899763107299805, 0.9614133834838867, 1.0104308128356934, 0.8619015216827393, 1.0912320613861084, 0.6386537551879883]
+Mean time 0.9628580808639526
+Std time 0.15697154572617014
+
+14  Rules (discovery order)
+-------------------------------------------------------------------------------------
+#  petal_length='(0.994, 2.967]' => Iris-setosa Prec:  1.0 Coverage:  0.3333333333333333
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(5.5, 6.7]' => Iris-versicolor Prec:  1.0 Coverage:  0.22
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_width='(2.8, 3.6]' => Iris-versicolor Prec:  1.0 Coverage:  0.14
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(6.7, 7.9]' => Iris-versicolor Prec:  1.0 Coverage:  0.02
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_width='(1.998, 2.8]'  and  sepal_length='(4.296, 5.5]' => Iris-versicolor Prec:  0.9090909090909091 Coverage:  0.06666666666666667
+#  petal_width='(0.9, 1.7]'  and  sepal_width='(2.8, 3.6]'  and  sepal_length='(5.5, 6.7]' => Iris-versicolor Prec:  1.0 Coverage:  0.12666666666666668
+#  petal_width='(0.9, 1.7]'  and  sepal_length='(5.5, 6.7]'  and  sepal_width='(1.998, 2.8]'  and  petal_length='(4.933, 6.9]' => Iris-versicolor Prec:  0.25 Coverage:  0.006666666666666667
+#  petal_length='(2.967, 4.933]'  and  sepal_width='(2.8, 3.6]'  and  sepal_length='(5.5, 6.7]'  and  petal_width='(1.7, 2.5]' => Iris-versicolor Prec:  0.3333333333333333 Coverage:  0.006666666666666667
+#  petal_width='(1.7, 2.5]'  and  petal_length='(4.933, 6.9]' => Iris-virginica Prec:  1.0 Coverage:  0.26666666666666666
+#  petal_width='(1.7, 2.5]'  and  sepal_width='(1.998, 2.8]' => Iris-virginica Prec:  1.0 Coverage:  0.1
+#  petal_width='(1.7, 2.5]'  and  sepal_length='(5.5, 6.7]'  and  sepal_width='(2.8, 3.6]'  and  petal_length='(2.967, 4.933]' => Iris-virginica Prec:  0.6666666666666666 Coverage:  0.013333333333333334
+#  petal_length='(4.933, 6.9]'  and  sepal_length='(6.7, 7.9]' => Iris-virginica Prec:  1.0 Coverage:  0.11333333333333333
+#  petal_length='(4.933, 6.9]'  and  sepal_width='(1.998, 2.8]'  and  sepal_length='(5.5, 6.7]'  and  petal_width='(0.9, 1.7]' => Iris-virginica Prec:  0.75 Coverage:  0.02
+#  sepal_width='(1.998, 2.8]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(4.296, 5.5]'  and  petal_width='(0.9, 1.7]' => Iris-virginica Prec:  0.09090909090909091 Coverage:  0.006666666666666667
+
+14  Rules (ordered by precision and coverage)
+-------------------------------------------------------------------------------------
+#  petal_length='(0.994, 2.967]' => Iris-setosa Prec:  1.0 Coverage:  0.3333333333333333
+#  petal_width='(1.7, 2.5]'  and  petal_length='(4.933, 6.9]' => Iris-virginica Prec:  1.0 Coverage:  0.26666666666666666
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(5.5, 6.7]' => Iris-versicolor Prec:  1.0 Coverage:  0.22
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_width='(2.8, 3.6]' => Iris-versicolor Prec:  1.0 Coverage:  0.14
+#  petal_width='(0.9, 1.7]'  and  sepal_width='(2.8, 3.6]'  and  sepal_length='(5.5, 6.7]' => Iris-versicolor Prec:  1.0 Coverage:  0.12666666666666668
+#  petal_length='(4.933, 6.9]'  and  sepal_length='(6.7, 7.9]' => Iris-virginica Prec:  1.0 Coverage:  0.11333333333333333
+#  petal_width='(1.7, 2.5]'  and  sepal_width='(1.998, 2.8]' => Iris-virginica Prec:  1.0 Coverage:  0.1
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(6.7, 7.9]' => Iris-versicolor Prec:  1.0 Coverage:  0.02
+#  petal_width='(0.9, 1.7]'  and  petal_length='(2.967, 4.933]'  and  sepal_width='(1.998, 2.8]'  and  sepal_length='(4.296, 5.5]' => Iris-versicolor Prec:  0.9090909090909091 Coverage:  0.06666666666666667
+#  petal_length='(4.933, 6.9]'  and  sepal_width='(1.998, 2.8]'  and  sepal_length='(5.5, 6.7]'  and  petal_width='(0.9, 1.7]' => Iris-virginica Prec:  0.75 Coverage:  0.02
+#  petal_width='(1.7, 2.5]'  and  sepal_length='(5.5, 6.7]'  and  sepal_width='(2.8, 3.6]'  and  petal_length='(2.967, 4.933]' => Iris-virginica Prec:  0.6666666666666666 Coverage:  0.013333333333333334
+#  petal_length='(2.967, 4.933]'  and  sepal_width='(2.8, 3.6]'  and  sepal_length='(5.5, 6.7]'  and  petal_width='(1.7, 2.5]' => Iris-versicolor Prec:  0.3333333333333333 Coverage:  0.006666666666666667
+#  petal_width='(0.9, 1.7]'  and  sepal_length='(5.5, 6.7]'  and  sepal_width='(1.998, 2.8]'  and  petal_length='(4.933, 6.9]' => Iris-versicolor Prec:  0.25 Coverage:  0.006666666666666667
+#  sepal_width='(1.998, 2.8]'  and  petal_length='(2.967, 4.933]'  and  sepal_length='(4.296, 5.5]'  and  petal_width='(0.9, 1.7]' => Iris-virginica Prec:  0.09090909090909091 Coverage:  0.006666666666666667
+
+Process finished with exit code 0
