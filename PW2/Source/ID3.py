@@ -1,6 +1,7 @@
 import copy
 import numpy as np
 import math
+from Tree import Tree
 
 '''
 Performs PRISM over the provided dataset
@@ -11,7 +12,6 @@ class ID3:
     def __init__(self, data, labels):
         self.data = data
         self.labels = labels
-        self.rules = []
 
     # Generates all the possible combinations of attribute/value pairs remaining in the dataframe
     @staticmethod
@@ -40,6 +40,7 @@ class ID3:
         InfoXA = 0
         for vi in X[Ak].unique():
             Xvi = X.loc[X[Ak] == vi]
+            print(Xvi)
 
             pXvi = Xvi.size / X.size
 
@@ -48,31 +49,56 @@ class ID3:
             InfoXCVi = 0
             for c_i in classes:
                 pXvici = Yvi[Yvi == c_i].size / Xvi.size
-                InfoXCVi -= (pXvici * math.log2(pXvici))
+                if pXvici > 0:
+                    InfoXCVi -= (pXvici * math.log2(pXvici))
 
             InfoXA += pXvi * InfoXCVi
 
         return InfoXC-InfoXA
 
     @staticmethod
-    # Generates the decision tree following the ID3 algorithm for the dataset X, labesl Y and the set of attributes A
+    # Generates the decision tree following the ID3 algorithm for the dataset X, labels Y and the set of attributes A
     def generate_tree(self, X, Y, A):
-        max_ig = -1
-        for Ak in A:
-            ig = self.calculate_ig(X, Ak)
-            if ig > max_ig:
-                best_attribute = Ak
+        if Y[Y == Y.mode].size == Y.size or not A:
+            child = Tree(is_leaf=True)
+            child.set_class(Y.mode)
+            return child
 
+        else:
+            max_ig = -math.inf
+            for Ak in A:
+                ig = self.calculate_ig(X, Ak)
+                if ig > max_ig:
+                    best_attribute = Ak
+                    max_ig = ig
 
-        # TODO: take vi as root and recursevily build the tree
+            # Generate subtrees splitting by best_attribute
+            values_list = X[best_attribute].unique()
 
+            A = [a1 for a1 in A if a1 != best_attribute]
+            root = Tree()
+            for vi in values_list:
+                Xvi = X.loc[X[best_attribute] == vi]
+                Yvi = Y.loc[Xvi.index]
+
+                if Xvi.empty:
+                    child = Tree()
+                    child.set_class(Yvi.mode)
+                else:
+                    child = self.generate_tree(Xvi, Yvi, A)
+
+                child.set_attribute(best_attribute)
+                child.set_value(vi)
+                root.add_node(child)
+
+            return root
 
     # Generates the ID3 tree
     def fit(self, verbose):
         labels = self.labels
         data = self.data
         attributes = list(data)
-        self.generate_tree(data, labels, attributes)
+        root = self.generate_tree(data, labels, attributes)
 
 
 

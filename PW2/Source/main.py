@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from preprocessing import preprocess
+from ID3 import ID3
+import math
 from sklearn.model_selection import StratifiedKFold
 import time
 import sys
@@ -24,10 +26,10 @@ def load_data(data_path, class_name):
 if __name__ == "__main__":
 
     # Run PRISM
-    # data, labels = load_data('./data/horse.csv', 'outcome')
-    # data, labels = load_data('./data/breast-cancer.data', 'Class')
-    data, labels = load_data('../Data/iris.data', 'class')
-    # data, labels = load_data('./data/test.csv','t')
+    # data, labels = load_data('../data/horse.csv', 'outcome')
+    # data, labels = load_data('../data/breast-cancer.data', 'Class')
+    # data, labels = load_data('../Data/iris.data', 'class')
+    data, labels = load_data('../Data/lenses.csv','t')
 
     # data, labels = load_data(sys.argv[1], sys.argv[2])
 
@@ -36,6 +38,9 @@ if __name__ == "__main__":
 
     pXc_i = labels[labels==labels[0]].size / data.size
     print(pXc_i)
+
+    id = ID3(data, labels)
+    print(id.calculate_ig(data,labels,attributes[3]))
 
 
 
