@@ -2,6 +2,8 @@ import copy
 import numpy as np
 import math
 from Tree import Tree
+import pandas as pd
+import copy
 
 '''
 Performs PRISM over the provided dataset
@@ -12,6 +14,7 @@ class ID3:
     def __init__(self, data, labels):
         self.data = data
         self.labels = labels
+        self.root = Tree()
 
     # Generates all the possible combinations of attribute/value pairs remaining in the dataframe
     @staticmethod
@@ -33,22 +36,21 @@ class ID3:
         # Calculate the Entropy of X with respect to C
         InfoXC = 0
         for c_i in classes:
-            pXc_i = Y[Y == c_i].size / X.size
-            InfoXC -= (pXc_i * math.log2(pXc_i))
+            pXc_i = Y[Y == c_i].size / Y.size
+            if pXc_i > 0:
+                InfoXC -= (pXc_i * math.log2(pXc_i))
 
         # Calculate the conditional entropy given Ak
         InfoXA = 0
         for vi in X[Ak].unique():
             Xvi = X.loc[X[Ak] == vi]
-            print(Xvi)
-
-            pXvi = Xvi.size / X.size
+            pXvi = len(Xvi.index) / len(X.index)
 
             Yvi = Y.loc[Xvi.index]
 
             InfoXCVi = 0
             for c_i in classes:
-                pXvici = Yvi[Yvi == c_i].size / Xvi.size
+                pXvici = Yvi[Yvi == c_i].size / Yvi.size
                 if pXvici > 0:
                     InfoXCVi -= (pXvici * math.log2(pXvici))
 
@@ -56,24 +58,23 @@ class ID3:
 
         return InfoXC-InfoXA
 
-    @staticmethod
     # Generates the decision tree following the ID3 algorithm for the dataset X, labels Y and the set of attributes A
     def generate_tree(self, X, Y, A):
-        if Y[Y == Y.mode].size == Y.size or not A:
-            child = Tree(is_leaf=True)
-            child.set_class(Y.mode)
+        if Y.value_counts().size == 1 or not A:
+            child = Tree()
+            child.set_class(Y.mode()[0])
             return child
 
         else:
             max_ig = -math.inf
             for Ak in A:
-                ig = self.calculate_ig(X, Ak)
+                ig = self.calculate_ig(X, Y, Ak)
                 if ig > max_ig:
                     best_attribute = Ak
                     max_ig = ig
 
             # Generate subtrees splitting by best_attribute
-            values_list = X[best_attribute].unique()
+            values_list = self.data[best_attribute].unique()
 
             A = [a1 for a1 in A if a1 != best_attribute]
             root = Tree()
@@ -83,7 +84,7 @@ class ID3:
 
                 if Xvi.empty:
                     child = Tree()
-                    child.set_class(Yvi.mode)
+                    child.set_class(Y.mode()[0])
                 else:
                     child = self.generate_tree(Xvi, Yvi, A)
 
@@ -91,17 +92,50 @@ class ID3:
                 child.set_value(vi)
                 root.add_node(child)
 
+            # This is made in order to predict an output, for generalization, when a new value of an instance that had
+            # never appeared in the training appears in the test
+            root.set_class(Y.mode()[0])
+
             return root
 
     # Generates the ID3 tree
-    def fit(self, verbose):
+    def fit(self):
         labels = self.labels
         data = self.data
         attributes = list(data)
         root = self.generate_tree(data, labels, attributes)
+        self.root = root
 
+        return root
 
+    def predict_instance(self, instance, label):
+        root = self.root
+
+        while root.children:
+            children = root.children
+            attribute = children[0].attribute
+            found = False
+            for child in children:
+                if child.value == instance[attribute]:
+                    root = child
+                    found = True
+                    break
+
+            if not found:
+                print('mierdaaa')
+                # None of the child had the same label than the instance
+                return root.clss == label
+
+        return root.clss == label
 
     # Predicts the values for the test data
     def predict(self, test_data, test_labels):
-       return
+        count = 0
+        for index, instance in test_data.iterrows():
+            label = test_labels.loc[index]
+            value = self.predict_instance(instance, label)
+            if value:
+                count +=1
+
+        print(count/len(test_data.index))
+

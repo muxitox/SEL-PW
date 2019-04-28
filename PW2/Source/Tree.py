@@ -1,10 +1,19 @@
 class Tree(object):
-    def __init__(self, attribute='root', value=None, clss=None, is_leaf=False):
+    def __init__(self, attribute='root', value=None, clss=None):
         self.attribute = attribute
         self.value = value
         self.clss = clss
-        self.is_leaf = is_leaf
         self.children = []
+
+    def __str__(self, level=0):
+        ret = "\t" * level + repr(self.attribute)+ ":" + repr(self.value)
+        if not self.children:
+            ret += " Class:" + repr(self.clss)
+
+        ret += "\n"
+        for child in self.children:
+            ret += child.__str__(level + 1)
+        return ret
 
     def add_node(self, node):
         self.children.append(node)
