@@ -3,9 +3,10 @@ import numpy as np
 from preprocessing import preprocess
 from ID3 import ID3
 from sklearn.model_selection import train_test_split
+from sklearn.utils import resample
 
-from id3 import Id3Estimator
-from id3 import export_graphviz
+#from id3 import Id3Estimator
+#from id3 import export_graphviz
 import math
 from sklearn.model_selection import StratifiedKFold
 import time
@@ -29,9 +30,9 @@ if __name__ == "__main__":
 
     # Run PRISM
     # data, labels = load_data('../data/horse.csv', 'outcome')
-    data, labels = load_data('../data/breast-cancer.data', 'Class')
+    # data, labels = load_data('../data/breast-cancer.data', 'Class')
     # data, labels = load_data('../Data/iris.data', 'class')
-    # data, labels = load_data('../Data/lenses.csv', 't')
+    data, labels = load_data('../Data/lenses.csv', 't')
     # data, labels = load_data('../Data/hair.data', 'Class')
 
 
@@ -39,13 +40,15 @@ if __name__ == "__main__":
 
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
-    id3 = ID3(X_train, y_train)
+    Xr_train, yr_train = resample(X_train, y_train)
 
-    root = id3.fit()
+    id3 = ID3(Xr_train, yr_train)
 
+
+    F = 1
+    root = id3.fit(F)
 
     print(str(root))
-
     id3.predict(X_test, y_test)
 
 

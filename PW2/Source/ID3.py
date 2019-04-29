@@ -1,9 +1,9 @@
-import copy
 import numpy as np
 import math
 from Tree import Tree
 import pandas as pd
 import copy
+import random
 
 '''
 Performs PRISM over the provided dataset
@@ -59,15 +59,20 @@ class ID3:
         return InfoXC-InfoXA
 
     # Generates the decision tree following the ID3 algorithm for the dataset X, labels Y and the set of attributes A
-    def generate_tree(self, X, Y, A):
+    def generate_tree(self, X, Y, A, F):
         if Y.value_counts().size == 1 or not A:
             child = Tree()
             child.set_class(Y.mode()[0])
             return child
 
         else:
+            if len(A) > F:
+                atr_selection = random.sample(A, F)
+            else:
+                atr_selection = A
+
             max_ig = -math.inf
-            for Ak in A:
+            for Ak in atr_selection:
                 ig = self.calculate_ig(X, Y, Ak)
                 if ig > max_ig:
                     best_attribute = Ak
@@ -86,7 +91,7 @@ class ID3:
                     child = Tree()
                     child.set_class(Y.mode()[0])
                 else:
-                    child = self.generate_tree(Xvi, Yvi, A)
+                    child = self.generate_tree(Xvi, Yvi, A, F)
 
                 child.set_attribute(best_attribute)
                 child.set_value(vi)
@@ -99,11 +104,11 @@ class ID3:
             return root
 
     # Generates the ID3 tree
-    def fit(self):
+    def fit(self, F):
         labels = self.labels
         data = self.data
         attributes = list(data)
-        root = self.generate_tree(data, labels, attributes)
+        root = self.generate_tree(data, labels, attributes, F)
         self.root = root
 
         return root
@@ -124,9 +129,9 @@ class ID3:
             if not found:
                 print('mierdaaa')
                 # None of the child had the same label than the instance
-                return root.clss == label
+                return root.clss
 
-        return root.clss == label
+        return root.clss
 
     # Predicts the values for the test data
     def predict(self, test_data, test_labels):
@@ -134,8 +139,8 @@ class ID3:
         for index, instance in test_data.iterrows():
             label = test_labels.loc[index]
             value = self.predict_instance(instance, label)
-            if value:
-                count +=1
+            if label == value:
+                count += 1
 
         print(count/len(test_data.index))
 
