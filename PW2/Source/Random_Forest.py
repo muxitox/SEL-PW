@@ -40,7 +40,7 @@ class RF:
             pred_list.append(pred)
 
         # Solves ties randomly
-        mode = mstats.mode(pred)
+        mode = mstats.mode(pred_list)
         return random.sample(mode, 1)
 
     # Predicts the values for the test data
@@ -48,7 +48,7 @@ class RF:
         prediction = copy.deepcopy(test_labels)
         for index, instance in test_data.iterrows():
             value = self.predict_instance(instance)
-            prediction.loc[index] = value
+            prediction.loc[index] = value[0][0]
 
         accuracy = sum(test_labels.eq(prediction)) / len(test_data.index)
         return prediction, accuracy

@@ -30,8 +30,8 @@ if __name__ == "__main__":
     # Run PRISM
     # data, labels = load_data('../data/horse.csv', 'outcome')
     # data, labels = load_data('../data/breast-cancer.data', 'Class')
-    # data, labels = load_data('../Data/iris.data', 'class')
-    data, labels = load_data('../Data/lenses.csv', 't')
+    data, labels = load_data('../Data/iris.data', 'class')
+    # data, labels = load_data('../Data/lenses.csv', 't')
     # data, labels = load_data('../Data/hair.data', 'Class')
 
 
@@ -40,17 +40,16 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
 
-    F = 1
-    NT = 2
+    F = 2
+    NT = 10
     rf = RF(NT, F)
     rf = rf.fit(X_train, y_train, NT, F)
 
-    pred, acc, a2 = rf.predict(X_test, y_test)
+    pred, acc = rf.predict(X_test, y_test)
 
     print(y_test)
     print(pred)
     print(acc)
-    print(a2)
 
 
     '''
