@@ -1,14 +1,13 @@
 import pandas as pd
 import numpy as np
 from preprocessing import preprocess
-from ID3 import ID3
+from Random_Forest import RF
 from sklearn.model_selection import train_test_split
 from sklearn.utils import resample
 
 #from id3 import Id3Estimator
 #from id3 import export_graphviz
 import math
-from sklearn.model_selection import StratifiedKFold
 import time
 import sys
 
@@ -40,17 +39,18 @@ if __name__ == "__main__":
 
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
-    Xr_train, yr_train = resample(X_train, y_train)
-
-    id3 = ID3(Xr_train, yr_train)
-
 
     F = 1
-    root = id3.fit(F)
+    NT = 2
+    rf = RF(NT, F)
+    rf = rf.fit(X_train, y_train, NT, F)
 
-    print(str(root))
-    id3.predict(X_test, y_test)
+    pred, acc, a2 = rf.predict(X_test, y_test)
 
+    print(y_test)
+    print(pred)
+    print(acc)
+    print(a2)
 
 
     '''

@@ -1,20 +1,17 @@
-import numpy as np
 import math
 from Tree import Tree
-import pandas as pd
-import copy
 import random
+import copy
 
 '''
-Performs PRISM over the provided dataset
+Performs ID3 on the provided dataset
 '''
 
 class ID3:
-    # Loads data from a path
-    def __init__(self, data, labels):
-        self.data = data
-        self.labels = labels
+    # Initializes de ID3 tree
+    def __init__(self):
         self.root = Tree()
+        self.data = None
 
     # Generates all the possible combinations of attribute/value pairs remaining in the dataframe
     @staticmethod
@@ -104,16 +101,15 @@ class ID3:
             return root
 
     # Generates the ID3 tree
-    def fit(self, F):
-        labels = self.labels
-        data = self.data
+    def fit(self, data, labels, F):
+        self.data = data
         attributes = list(data)
         root = self.generate_tree(data, labels, attributes, F)
         self.root = root
 
         return root
 
-    def predict_instance(self, instance, label):
+    def predict_instance(self, instance):
         root = self.root
 
         while root.children:
@@ -127,7 +123,6 @@ class ID3:
                     break
 
             if not found:
-                print('mierdaaa')
                 # None of the child had the same label than the instance
                 return root.clss
 
@@ -135,12 +130,12 @@ class ID3:
 
     # Predicts the values for the test data
     def predict(self, test_data, test_labels):
-        count = 0
+        prediction = copy.deepcopy(test_labels)
         for index, instance in test_data.iterrows():
-            label = test_labels.loc[index]
-            value = self.predict_instance(instance, label)
-            if label == value:
-                count += 1
+            value = self.predict_instance(instance)
+            prediction.loc[index] = value
 
-        print(count/len(test_data.index))
+        accuracy = sum(test_labels.eq(prediction))/len(test_data.index)
+        return prediction, accuracy
+
 
