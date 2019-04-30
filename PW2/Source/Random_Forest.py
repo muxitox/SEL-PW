@@ -5,7 +5,7 @@ import pandas as pd
 from ID3 import ID3
 import copy
 from sklearn.utils import resample
-from scipy.stats import mstats
+import statistics
 import random
 
 
@@ -34,13 +34,20 @@ class RF:
         return self
 
     def predict_instance(self, instance):
-        pred_list = []
+        pred_list = np.empty(1)
         for tree in self.estimators:
             pred = tree.predict_instance(instance)
-            pred_list.append(pred)
+            pred_list = np.append(pred_list, pred)
 
         # Solves ties randomly
-        mode = mstats.mode(pred_list)
+        unique, counts = np.unique(pred_list, return_counts=True)
+        higher_freq = max(counts)
+
+        mode = []
+        for (u, c) in zip(unique, counts):
+            if c == higher_freq:
+                mode.append(u)
+
         return random.sample(mode, 1)
 
     # Predicts the values for the test data
@@ -48,7 +55,7 @@ class RF:
         prediction = copy.deepcopy(test_labels)
         for index, instance in test_data.iterrows():
             value = self.predict_instance(instance)
-            prediction.loc[index] = value[0][0]
+            prediction.loc[index] = value[0]
 
         accuracy = sum(test_labels.eq(prediction)) / len(test_data.index)
         return prediction, accuracy

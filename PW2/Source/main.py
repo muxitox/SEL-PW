@@ -40,8 +40,8 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
 
-    F = 2
-    NT = 10
+    F = 3
+    NT = 5
     rf = RF(NT, F)
     rf = rf.fit(X_train, y_train, NT, F)
 
