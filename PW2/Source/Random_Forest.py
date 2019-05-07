@@ -7,6 +7,8 @@ import copy
 from sklearn.utils import resample
 import statistics
 import random
+from operator import itemgetter
+
 
 
 '''
@@ -59,4 +61,19 @@ class RF:
 
         accuracy = sum(test_labels.eq(prediction)) / len(test_data.index)
         return prediction, accuracy
+
+    def importance_list(self):
+        feat_list = []
+        for tree in self.estimators:
+            feat_list.append(tree.root.children[0].attribute)
+
+        unique, counts = np.unique(feat_list, return_counts=True)
+
+        counts = [a/self.NT for a in counts]
+        feat_count = list(zip(unique, counts))
+        feat_order = sorted(feat_count, key=lambda tup: -tup[1])
+
+        return feat_order
+
+
 

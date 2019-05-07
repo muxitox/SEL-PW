@@ -1,0 +1,35 @@
+C:\Users\Usuario\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/Usuario/Documents/Universidad/Master/SEL/SEL-PW/PW2/Source/main.py
+
+------------
+F: 1 , NT: 50 , Accuracy:  0.7741935483870968 , Time:  69.33699083328247
+Feature importance ordering [('ASCITES', 0.1), ('SEX', 0.1), ('VARICES', 0.1), ('AGE', 0.08), ('BILIRUBIN', 0.08), ('FATIGUE', 0.08), ('ALK_PHOSPHATE', 0.06), ('HISTOLOGY', 0.06), ('PROTIME', 0.06), ('SPIDERS', 0.06), ('ANTIVIRALS', 0.04), ('LIVER_BIG', 0.04), ('STEROID', 0.04), ('ALBUMIN', 0.02), ('ANOREXIA', 0.02), ('LIVER_FIRM', 0.02), ('SGOT', 0.02), ('SPLEEN PALPABLE', 0.02)]
+
+------------
+F: 3 , NT: 50 , Accuracy:  0.8064516129032258 , Time:  62.314520597457886
+Feature importance ordering [('ALK_PHOSPHATE', 0.22), ('PROTIME', 0.14), ('BILIRUBIN', 0.12), ('ASCITES', 0.1), ('SGOT', 0.1), ('ALBUMIN', 0.06), ('FATIGUE', 0.06), ('MALAISE', 0.06), ('VARICES', 0.04), ('ANOREXIA', 0.02), ('LIVER_FIRM', 0.02), ('SEX', 0.02), ('SPIDERS', 0.02), ('STEROID', 0.02)]
+
+------------
+F: 4 , NT: 50 , Accuracy:  0.8064516129032258 , Time:  64.07196927070618
+Feature importance ordering [('ALK_PHOSPHATE', 0.18), ('SGOT', 0.18), ('PROTIME', 0.16), ('BILIRUBIN', 0.14), ('ALBUMIN', 0.12), ('MALAISE', 0.1), ('ASCITES', 0.02), ('FATIGUE', 0.02), ('HISTOLOGY', 0.02), ('SPIDERS', 0.02), ('SPLEEN PALPABLE', 0.02), ('VARICES', 0.02)]
+
+------------
+F: 4 , NT: 50 , Accuracy:  0.8064516129032258 , Time:  64.01040530204773
+Feature importance ordering [('ALBUMIN', 0.18), ('PROTIME', 0.16), ('ALK_PHOSPHATE', 0.12), ('BILIRUBIN', 0.12), ('SGOT', 0.12), ('AGE', 0.06), ('FATIGUE', 0.04), ('MALAISE', 0.04), ('SPIDERS', 0.04), ('ANOREXIA', 0.02), ('HISTOLOGY', 0.02), ('LIVER_BIG', 0.02), ('SPLEEN PALPABLE', 0.02), ('STEROID', 0.02), ('VARICES', 0.02)]
+
+------------
+F: 1 , NT: 100 , Accuracy:  0.8064516129032258 , Time:  166.0087034702301
+Feature importance ordering [('ALBUMIN', 0.1), ('AGE', 0.08), ('PROTIME', 0.07), ('SEX', 0.07), ('ASCITES', 0.06), ('BILIRUBIN', 0.06), ('FATIGUE', 0.06), ('SGOT', 0.06), ('SPIDERS', 0.06), ('LIVER_BIG', 0.05), ('STEROID', 0.05), ('ALK_PHOSPHATE', 0.04), ('ANOREXIA', 0.04), ('HISTOLOGY', 0.04), ('SPLEEN PALPABLE', 0.04), ('VARICES', 0.04), ('LIVER_FIRM', 0.03), ('MALAISE', 0.03), ('ANTIVIRALS', 0.02)]
+
+------------
+F: 3 , NT: 100 , Accuracy:  0.8064516129032258 , Time:  128.0925784111023
+Feature importance ordering [('ALBUMIN', 0.16), ('SGOT', 0.15), ('ALK_PHOSPHATE', 0.13), ('BILIRUBIN', 0.09), ('PROTIME', 0.09), ('SPIDERS', 0.07), ('FATIGUE', 0.06), ('AGE', 0.05), ('ASCITES', 0.05), ('MALAISE', 0.03), ('STEROID', 0.03), ('VARICES', 0.03), ('SEX', 0.02), ('ANOREXIA', 0.01), ('ANTIVIRALS', 0.01), ('HISTOLOGY', 0.01), ('SPLEEN PALPABLE', 0.01)]
+
+------------
+F: 4 , NT: 100 , Accuracy:  0.8064516129032258 , Time:  127.26572442054749
+Feature importance ordering [('ALBUMIN', 0.21), ('ALK_PHOSPHATE', 0.15), ('PROTIME', 0.14), ('SGOT', 0.14), ('BILIRUBIN', 0.11), ('ASCITES', 0.06), ('SPIDERS', 0.06), ('FATIGUE', 0.03), ('HISTOLOGY', 0.02), ('MALAISE', 0.02), ('SPLEEN PALPABLE', 0.02), ('AGE', 0.01), ('LIVER_BIG', 0.01), ('STEROID', 0.01), ('VARICES', 0.01)]
+
+------------
+F: 4 , NT: 100 , Accuracy:  0.8064516129032258 , Time:  129.34449791908264
+Feature importance ordering [('ALK_PHOSPHATE', 0.2), ('ALBUMIN', 0.19), ('SGOT', 0.19), ('BILIRUBIN', 0.12), ('PROTIME', 0.1), ('FATIGUE', 0.07), ('AGE', 0.03), ('ASCITES', 0.02), ('SPIDERS', 0.02), ('SPLEEN PALPABLE', 0.02), ('HISTOLOGY', 0.01), ('LIVER_BIG', 0.01), ('MALAISE', 0.01), ('VARICES', 0.01)]
+
+Process finished with exit code 0

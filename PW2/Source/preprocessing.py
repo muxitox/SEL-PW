@@ -14,6 +14,7 @@ def preprocess(data):
     data.replace('?', np.NaN, inplace=True)
     data.replace('NA', np.NaN, inplace=True)
     data.fillna(method='bfill', inplace=True)
+    data.fillna(method='pad', inplace=True)
     # data = to_numbers(data)
     data = discretize(data)
 

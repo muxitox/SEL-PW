@@ -1,0 +1,35 @@
+C:\Users\Usuario\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/Usuario/Documents/Universidad/Master/SEL/SEL-PW/PW2/Source/main.py
+
+------------
+F: 1 , NT: 50 , Accuracy:  0.9333333333333333 , Time:  8.76960015296936
+Feature importance ordering [('sepal_length', 0.32), ('petal_length', 0.3), ('petal_width', 0.24), ('sepal_width', 0.14)]
+
+------------
+F: 3 , NT: 50 , Accuracy:  0.9333333333333333 , Time:  8.982464790344238
+Feature importance ordering [('petal_width', 0.74), ('petal_length', 0.26)]
+
+------------
+F: 2 , NT: 50 , Accuracy:  0.9333333333333333 , Time:  8.82689642906189
+Feature importance ordering [('petal_width', 0.48), ('petal_length', 0.36), ('sepal_length', 0.16)]
+
+------------
+F: 2 , NT: 50 , Accuracy:  0.9333333333333333 , Time:  8.549735307693481
+Feature importance ordering [('petal_width', 0.58), ('petal_length', 0.26), ('sepal_length', 0.16)]
+
+------------
+F: 1 , NT: 100 , Accuracy:  0.9333333333333333 , Time:  19.25679039955139
+Feature importance ordering [('sepal_length', 0.33), ('sepal_width', 0.27), ('petal_length', 0.23), ('petal_width', 0.17)]
+
+------------
+F: 3 , NT: 100 , Accuracy:  0.9333333333333333 , Time:  18.65650486946106
+Feature importance ordering [('petal_width', 0.61), ('petal_length', 0.39)]
+
+------------
+F: 2 , NT: 100 , Accuracy:  0.9333333333333333 , Time:  18.145817756652832
+Feature importance ordering [('petal_width', 0.42), ('petal_length', 0.41), ('sepal_length', 0.17)]
+
+------------
+F: 2 , NT: 100 , Accuracy:  0.9333333333333333 , Time:  18.273744106292725
+Feature importance ordering [('petal_width', 0.43), ('petal_length', 0.39), ('sepal_length', 0.18)]
+
+Process finished with exit code 0

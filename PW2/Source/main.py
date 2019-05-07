@@ -29,37 +29,51 @@ if __name__ == "__main__":
 
     # Run PRISM
     # data, labels = load_data('../data/horse.csv', 'outcome')
-    # data, labels = load_data('../data/breast-cancer.data', 'Class')
-    data, labels = load_data('../Data/iris.data', 'class')
+    data, labels = load_data('../data/breast-cancer.data', 'Class')
+    # data, labels = load_data('../Data/iris.data', 'class')
     # data, labels = load_data('../Data/lenses.csv', 't')
     # data, labels = load_data('../Data/hair.data', 'Class')
+    # data, labels = load_data('../data/hepatitis.data', 'Class')
 
 
     # data, labels = load_data(sys.argv[1], sys.argv[2])
 
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
-
-    F = 3
-    NT = 5
+    '''
+    F = 2
+    NT = 1
     rf = RF(NT, F)
+    start_time = time.time()
     rf = rf.fit(X_train, y_train, NT, F)
+    elapsed_time = time.time() - start_time
 
     pred, acc = rf.predict(X_test, y_test)
-
-    print(y_test)
-    print(pred)
-    print(acc)
-
-
+    feat_importance = rf.importance_list()
+    print('')
+    print('------------')
+    print('F:', F, ', NT:', NT, ', Accuracy: ', acc, ', Time: ', elapsed_time)
+    print('Feature importance ordering', feat_importance)
     '''
 
-    estimator = Id3Estimator()
-    estimator.fit(data, labels)
-    pred = estimator.predict(data)
-    print(labels==pred)
+    # F = 3
+    # NT = 5
+    num_feat = len(list(X_train))
+    F = [1]
+    NT = [100]
 
-    print(str(estimator.tree_))
-    export_graphviz(estimator.tree_, 'tree.dot', list(data))
-    '''
+    for nt in NT:
+        for f in F:
+
+            rf = RF(nt, f)
+            start_time = time.time()
+            rf = rf.fit(X_train, y_train, nt, f)
+            elapsed_time = time.time() - start_time
+
+            pred, acc = rf.predict(X_test, y_test)
+            feat_importance = rf.importance_list()
+            print('')
+            print('------------')
+            print('F:', f, ', NT:', nt, ', Accuracy: ', acc, ', Time: ', elapsed_time)
+            print('Feature importance ordering', feat_importance)
 

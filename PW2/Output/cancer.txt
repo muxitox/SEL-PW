@@ -1,0 +1,22 @@
+------------
+F: 1 , NT: 50 , Accuracy:  0.7586206896551724 , Time:  488.2731330394745
+Feature importance ordering [('breast_quad', 0.22), ('menopause', 0.2), ('node_caps', 0.18), ('inv_nodes', 0.1), ('age', 0.08), ('breast', 0.08), ('irradiat', 0.08), ('tumor_size', 0.06)]
+
+------------
+F: 3 , NT: 50 , Accuracy:  0.7931034482758621 , Time:  806.2071833610535
+Feature importance ordering [('deg_malig', 0.36), ('tumor_size', 0.26), ('inv_nodes', 0.16), ('age', 0.08), ('node_caps', 0.08), ('menopause', 0.04), ('irradiat', 0.02)]
+
+------------
+F: 3 , NT: 50 , Accuracy:  0.7586206896551724 , Time:  262.8078405857086
+Feature importance ordering [('tumor_size', 0.38), ('deg_malig', 0.2), ('inv_nodes', 0.1), ('node_caps', 0.1), ('age', 0.08), ('irradiat', 0.08), ('breast', 0.04), ('breast_quad', 0.02)]
+
+------------
+F: 3 , NT: 50 , Accuracy:  0.7413793103448276 , Time:  512.5806422233582
+Feature importance ordering [('deg_malig', 0.24), ('tumor_size', 0.22), ('inv_nodes', 0.2), ('node_caps', 0.14), ('age', 0.08), ('irradiat', 0.06), ('breast_quad', 0.04), ('breast', 0.02)]
+
+
+F: 1 , NT: 100 , Accuracy:  0.7758620689655172 , Time:  954.1660430431366
+Feature importance ordering [('inv_nodes', 0.2), ('breast', 0.15), ('menopause', 0.11), ('tumor_size', 0.11), ('breast_quad', 0.09), ('irradiat', 0.09), ('node_caps', 0.09), ('age', 0.08), ('deg_malig', 0.08)]
+
+F: 1 , NT: 100 , Accuracy:  0.8015674564845566 , Time:  1213.140004564845
+Feature importance ordering  [('deg_malig', 0.39), ('tumor_size', 0.23), ('age', 0.12), ('inv_nodes', 0.08), ('node_caps', 0.07), ('irradiat', 0.06), ('breast', 0.03), ('breast_quad', 0.02)]
