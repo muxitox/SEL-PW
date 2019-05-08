@@ -33,7 +33,9 @@ if __name__ == "__main__":
     # data, labels = load_data('../data/hepatitis.data', 'Class')
 
     print('Loading Dataset...')
-    data, labels, NT, F = load_data(sys.argv[1], sys.argv[2], sys.argv[4], sys.argv[4])
+    data, labels = load_data(sys.argv[1], sys.argv[2])
+    NT = int(sys.argv[3])
+    F = int(sys.argv[4])
     # Holdout
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
