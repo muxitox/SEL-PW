@@ -27,53 +27,29 @@ def load_data(data_path, class_name):
 
 if __name__ == "__main__":
 
-    # Run PRISM
-    # data, labels = load_data('../data/horse.csv', 'outcome')
-    data, labels = load_data('../data/breast-cancer.data', 'Class')
+    # Run Random Forest
+    # data, labels = load_data('../data/breast-cancer.data', 'Class')
     # data, labels = load_data('../Data/iris.data', 'class')
-    # data, labels = load_data('../Data/lenses.csv', 't')
-    # data, labels = load_data('../Data/hair.data', 'Class')
     # data, labels = load_data('../data/hepatitis.data', 'Class')
 
-
-    # data, labels = load_data(sys.argv[1], sys.argv[2])
-
+    print('Loading Dataset...')
+    data, labels, NT, F = load_data(sys.argv[1], sys.argv[2], sys.argv[4], sys.argv[4])
+    # Holdout
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=103, stratify=labels)
 
-    '''
-    F = 2
-    NT = 1
+    print('Training the Random Forest...')
     rf = RF(NT, F)
     start_time = time.time()
     rf = rf.fit(X_train, y_train, NT, F)
     elapsed_time = time.time() - start_time
 
+    print('Predicting...')
+    # Predict the result
     pred, acc = rf.predict(X_test, y_test)
     feat_importance = rf.importance_list()
     print('')
-    print('------------')
     print('F:', F, ', NT:', NT, ', Accuracy: ', acc, ', Time: ', elapsed_time)
     print('Feature importance ordering', feat_importance)
-    '''
 
-    # F = 3
-    # NT = 5
-    num_feat = len(list(X_train))
-    F = [1]
-    NT = [100]
 
-    for nt in NT:
-        for f in F:
-
-            rf = RF(nt, f)
-            start_time = time.time()
-            rf = rf.fit(X_train, y_train, nt, f)
-            elapsed_time = time.time() - start_time
-
-            pred, acc = rf.predict(X_test, y_test)
-            feat_importance = rf.importance_list()
-            print('')
-            print('------------')
-            print('F:', f, ', NT:', nt, ', Accuracy: ', acc, ', Time: ', elapsed_time)
-            print('Feature importance ordering', feat_importance)
 

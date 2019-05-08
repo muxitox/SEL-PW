@@ -57,17 +57,20 @@ class ID3:
 
     # Generates the decision tree following the ID3 algorithm for the dataset X, labels Y and the set of attributes A
     def generate_tree(self, X, Y, A, F):
+        # All the instances have the same label or we have not more attributes to split with A
         if Y.value_counts().size == 1 or not A:
             child = Tree()
             child.set_class(Y.mode()[0])
             return child
 
         else:
+            # Sampling F features from A if F<|A|
             if len(A) > F:
                 atr_selection = random.sample(A, F)
             else:
                 atr_selection = A
 
+            # Computing the Information Gain of each attribute Ak
             max_ig = -math.inf
             for Ak in atr_selection:
                 ig = self.calculate_ig(X, Y, Ak)
@@ -75,21 +78,26 @@ class ID3:
                     best_attribute = Ak
                     max_ig = ig
 
-            # Generate subtrees splitting by best_attribute
             values_list = self.data[best_attribute].unique()
-
+            # Remove the selected attribute from the list of attributes A
             A = [a1 for a1 in A if a1 != best_attribute]
             root = Tree()
+
+            # Generate subtrees splitting by best_attribute
             for vi in values_list:
+                # Load the instances containing the value vi for Ak
                 Xvi = X.loc[X[best_attribute] == vi]
                 Yvi = Y.loc[Xvi.index]
 
+                # There is no instances containing vi anymore, generalize creating a leaf with the mode of the parent
                 if Xvi.empty:
                     child = Tree()
                     child.set_class(Y.mode()[0])
+                # Create a child tree subsplitting Xvi
                 else:
                     child = self.generate_tree(Xvi, Yvi, A, F)
 
+                # Add the subtrees to the root
                 child.set_attribute(best_attribute)
                 child.set_value(vi)
                 root.add_node(child)
